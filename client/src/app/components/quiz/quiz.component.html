@@ -1,1 +1,7 @@
-<p>quiz works!</p>
+<mat-drawer-container class="drawer-container">
+    <mat-drawer #drawer [mode]="'side'">I'm a drawer</mat-drawer>
+    <mat-drawer-content>
+        <button mat-raised-button color="primary" (click)="drawer.toggle()">Start your Quiz</button>
+    </mat-drawer-content>
+</mat-drawer-container>
+<router-outlet></router-outlet>

@@ -21,6 +21,8 @@
     "@angular/platform-browser": "~8.2.0",
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
+    "@material/icon-button": "^3.1.0",
+    "@material/top-app-bar": "^3.1.0",
     "apollo-angular": "^1.6.0",
     "apollo-client": "^2.6.4",
     "graphql": "^14.4.2",

@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/purple-green.css";
+html {
+  height: 100%;
+  body {
+    margin: 0;
+    height: 100%;
+
+    .mdc-top-app-bar {
+      background-color: #00ff00;
+      // background-color: #bed63a;
+      .mdc-top-app-bar__title {
+        padding-left: 0;
+      }
+    }
+
+    main {
+      height: 91.3%;
+    }
+  }
+}

@@ -28,7 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/@material/top-app-bar/dist/mdc.top-app-bar.min.css",
+              "./node_modules/@material/icon-button/dist/mdc.icon-button.min.css"
             ],
             "scripts": []
           },
@@ -93,7 +95,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/@material/top-app-bar/dist/mdc.top-app-bar.min.css",
+              "./node_modules/@material/icon-button/dist/mdc.icon-button.min.css"
             ],
             "scripts": []
           }
