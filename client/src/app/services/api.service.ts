@@ -3,11 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthService {
+export class ApiService {
 
   constructor() { }
-
-  IsAdmin(): boolean {
-    return true;
-  }
 }

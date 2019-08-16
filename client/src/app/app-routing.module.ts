@@ -26,21 +26,7 @@ const routes: Routes = [
   },
   {
     path: 'quiz',
-    component: QuizComponent,
-    children: [
-      {
-        path: 'instructions',
-        component: InstructionsComponent
-      },
-      {
-        path: 'questions',
-        component: QuestionsComponent
-      },
-      {
-        path: 'final',
-        component: EndComponent
-      }
-    ]
+    component: QuizComponent
   },
   {
     path: '404',

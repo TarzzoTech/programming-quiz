@@ -4,6 +4,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +19,8 @@ import { EndComponent } from './components/quiz/end/end.component';
 import { NoRouteComponent } from './components/no-route/no-route.component';
 import { AuthService } from './services/auth.service';
 import { MatButtonModule } from '@angular/material/button';
+import { QuizService } from './services/quiz.service';
+import { ApiService } from './services/api.service';
 
 @NgModule({
   declarations: [
@@ -37,9 +41,15 @@ import { MatButtonModule } from '@angular/material/button';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTooltipModule,
+    MatIconModule
   ],
-  providers: [AuthService],
+  providers: [
+    AuthService,
+    QuizService,
+    ApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
