@@ -3,6 +3,7 @@ export interface Question {
   Title: string;
   Description: string;
   Options: QuestionOption;
+  Answer: string;
 }
 
 export interface QuestionOption {

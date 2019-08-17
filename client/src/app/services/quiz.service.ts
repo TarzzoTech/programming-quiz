@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Questions, Question } from '../models';
-import { Subject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +8,7 @@ import { Subject } from 'rxjs';
 export class QuizService {
 
   private Questions: Question[] = Questions;
-  onQuestionSelect: Subject<number> = new Subject<number>();
+  onQuestionSelect: BehaviorSubject<number> = new BehaviorSubject<number>(0);
 
   constructor() { }
 

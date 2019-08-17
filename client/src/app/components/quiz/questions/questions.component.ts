@@ -11,12 +11,15 @@ import { QuizService } from 'src/app/services/quiz.service';
 export class QuestionsComponent implements OnInit, OnDestroy {
 
   question: Question;
+  questionNumber: number;
   questionSelectSubscription: Subscription;
+  selectedOption: string;
 
   constructor(private quiz: QuizService) {}
 
   ngOnInit() {
     this.questionSelectSubscription = this.quiz.onQuestionSelect.subscribe((qNum) => {
+      this.questionNumber = qNum + 1;
       this.question = this.quiz.getQuestion(qNum);
       console.log(this.question);
     });
