@@ -1,5 +1,5 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Question } from 'src/app/models';
+import { Component, OnInit, OnDestroy, EventEmitter, Output } from '@angular/core';
+import { Question, Answers } from 'src/app/models';
 import { Subscription } from 'rxjs';
 import { QuizService } from 'src/app/services/quiz.service';
 
@@ -14,6 +14,8 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   questionNumber: number;
   questionSelectSubscription: Subscription;
   selectedOption: string;
+  // tslint:disable-next-line: no-output-on-prefix
+  @Output() onSelect: EventEmitter<Answers> = new EventEmitter<Answers>();
 
   constructor(private quiz: QuizService) {}
 
@@ -21,7 +23,15 @@ export class QuestionsComponent implements OnInit, OnDestroy {
     this.questionSelectSubscription = this.quiz.onQuestionSelect.subscribe((qNum) => {
       this.questionNumber = qNum + 1;
       this.question = this.quiz.getQuestion(qNum);
-      console.log(this.question);
+      this.selectedOption = this.question.SelectedAnswers;
+    });
+  }
+
+  onChange($event): void {
+    this.selectedOption = $event;
+    this.onSelect.emit({
+      Id: this.question.Id,
+      Answer: $event
     });
   }
 

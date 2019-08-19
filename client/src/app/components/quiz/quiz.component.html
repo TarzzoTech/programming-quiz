@@ -14,7 +14,7 @@
             <button mat-raised-button color="primary" (click)="drawer.toggle(); startQuiz()">Start your Quiz</button>
         </ng-container>
         <ng-container *ngIf="viewMode === QuesViewMode.QUESTIONS">
-            <app-questions></app-questions>
+            <app-questions (onSelect)="onSelect($event)"></app-questions>
             <div class="action-buttons">
                 <button mat-raised-button color="primary" *ngIf="!showSubmitBtn" (click)="nextQuestion()">Next</button>
                 <button mat-raised-button color="primary" *ngIf="showSubmitBtn"

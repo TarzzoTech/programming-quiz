@@ -43,6 +43,10 @@ export class QuizComponent implements OnInit {
     }
   }
 
+  onSelect($event): void {
+    this.quiz.updateSelectedAnswers($event);
+  }
+
   nextQuestion(): void {
     this.updateQuizDetails((this.currentQuestion += 1));
   }
@@ -50,5 +54,6 @@ export class QuizComponent implements OnInit {
   submitQuiz(): void {
     this.viewMode = QuesViewMode.END;
     this.showSubmitBtn = false;
+    this.quiz.Submit();
   }
 }

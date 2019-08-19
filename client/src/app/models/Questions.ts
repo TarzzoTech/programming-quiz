@@ -4,6 +4,8 @@ export interface Question {
   Description: string;
   Options: QuestionOption;
   Answer: string;
+  Score?: number;
+  SelectedAnswers?: string | null | undefined;
 }
 
 export interface QuestionOption {
@@ -11,4 +13,9 @@ export interface QuestionOption {
   b: string;
   c: string;
   d: string;
+}
+
+export interface Answers {
+  Id: string;
+  Answer: string | null;
 }
