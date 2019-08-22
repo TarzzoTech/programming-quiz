@@ -22,7 +22,7 @@
             </div>
         </ng-container>
         <ng-container *ngIf="viewMode === QuesViewMode.END">
-            <app-end></app-end>
+            <app-end [scorecard]="scorecard"></app-end>
         </ng-container>
     </mat-drawer-content>
 </mat-drawer-container>

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Questions, Question, Answers } from '../models';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +8,7 @@ import { BehaviorSubject } from 'rxjs';
 export class QuizService {
   private Questions: Question[] = Questions;
   onQuestionSelect: BehaviorSubject<number> = new BehaviorSubject<number>(0);
+  onSubmitQuiz: Subject<string> = new Subject<string>();
   TotalScore = 0;
   ActualScore = 0;
 
@@ -48,6 +49,6 @@ export class QuizService {
         this.TotalScore += q.Score || 1;
       }
     });
-    console.log(this.TotalScore, '/', this.ActualScore);
+    this.onSubmitQuiz.next(`${this.TotalScore}/${this.ActualScore}`);
   }
 }

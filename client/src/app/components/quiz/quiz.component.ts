@@ -1,24 +1,34 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { QuesViewMode } from 'src/app/models';
 import { QuizService } from 'src/app/services/quiz.service';
+import { Subscription } from 'rxjs/internal/Subscription';
 
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
   styleUrls: ['./quiz.component.scss']
 })
-export class QuizComponent implements OnInit {
+export class QuizComponent implements OnInit, OnDestroy {
   QuesViewMode = QuesViewMode;
   viewMode: QuesViewMode;
   currentQuestion: number;
   totalQuestions: number;
   showSubmitBtn = false;
   questionNumberList: number[];
+  scoreSubscription: Subscription;
+  scorecard: string;
 
   constructor(private quiz: QuizService) {}
 
   ngOnInit() {
     this.viewMode = QuesViewMode.INSTRUCTIONS;
+    this.scoreSubscription = this.quiz.onSubmitQuiz.subscribe((score) => {
+      this.scorecard = score;
+    });
+  }
+
+  ngOnDestroy() {
+    this.scoreSubscription.unsubscribe();
   }
 
   startQuiz(): void {
