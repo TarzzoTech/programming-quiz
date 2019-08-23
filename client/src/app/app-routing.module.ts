@@ -5,10 +5,9 @@ import { LoginComponent } from './components/login/login.component';
 import { QuestionsListComponent } from './components/questions-list/questions-list.component';
 import { MarksDashboardComponent } from './components/marks-dashboard/marks-dashboard.component';
 import { QuizComponent } from './components/quiz/quiz.component';
-import { InstructionsComponent } from './components/quiz/instructions/instructions.component';
-import { QuestionsComponent } from './components/quiz/questions/questions.component';
-import { EndComponent } from './components/quiz/end/end.component';
 import { NoRouteComponent } from './components/no-route/no-route.component';
+import { DataEntryComponent } from './components/data-entry/data-entry.component';
+import { TrashComponent } from './components/trash/trash.component';
 
 
 const routes: Routes = [
@@ -23,6 +22,14 @@ const routes: Routes = [
   {
     path: 'marks-dashboard',
     component: MarksDashboardComponent
+  },
+  {
+    path: 'data-entry',
+    component: DataEntryComponent
+  },
+  {
+    path: 'trash',
+    component: TrashComponent
   },
   {
     path: 'quiz',

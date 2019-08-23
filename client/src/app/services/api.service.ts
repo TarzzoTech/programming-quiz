@@ -4,6 +4,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiService {
+  constructor() {}
 
-  constructor() { }
+  validateEmail(email: string): boolean {
+    return email === 'admin@pq.com';
+  }
+
+  validatePwd(pwd: string): boolean {
+    return true;
+  }
 }

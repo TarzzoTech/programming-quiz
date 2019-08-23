@@ -1,1 +1,35 @@
-<p>login works!</p>
+<div class="login-container">
+    <div class="row">
+        <div class="col-4 title-block">
+            <div class="icon-text">PQ</div>
+            <div>Programming Quiz</div>
+        </div>
+        <div class="col-8 form-email-block">
+            <form class="login-form" *ngIf="!showPasswordBlock" (submit)="emailSubmit()">
+                <mat-form-field class="login-form-full-width">
+                    <input matInput placeholder="Email" [formControl]="emailFormControl">
+                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                        Please enter a valid email address
+                    </mat-error>
+                    <mat-error *ngIf="emailFormControl.hasError('required')">
+                        Email is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+            </form>
+            <form class="login-form" *ngIf="showPasswordBlock" (submit)="passwordSubmit()">
+                <mat-form-field class="login-form-full-width">
+                    <input matInput placeholder="Password" [formControl]="passwordFormControl">
+                    <mat-error *ngIf="passwordFormControl.hasError('minlength') && !passwordFormControl.hasError('required')">
+                        Password must be greater than 6 digits
+                    </mat-error>
+                    <mat-error *ngIf="passwordFormControl.hasError('required')">
+                        Password is <strong>required</strong>
+                    </mat-error>
+                    <mat-error *ngIf="invalidPassword">
+                        Password is <strong>invalid</strong>
+                    </mat-error>
+                </mat-form-field>
+            </form>
+        </div>
+    </div>
+</div>
