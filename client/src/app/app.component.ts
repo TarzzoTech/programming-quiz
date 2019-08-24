@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { AuthService } from './services/auth.service';
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
+import { Role } from './models';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +11,11 @@ import { Router } from '@angular/router';
 })
 export class AppComponent  implements OnInit, OnDestroy {
 
-  isAdmin = false;
+  mode: Role;
+  role = Role;
+  name: string;
   roleSyncSubscription: Subscription;
+  nameSyncSubscription: Subscription;
 
   constructor(
     private auth: AuthService,
@@ -19,8 +23,11 @@ export class AppComponent  implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit() {
-    this.roleSyncSubscription = this.auth.roleSync.subscribe((isAdmin: boolean) => {
-      this.isAdmin = isAdmin;
+    this.roleSyncSubscription = this.auth.roleSync.subscribe((role: Role) => {
+      this.mode = role;
+    });
+    this.nameSyncSubscription = this.auth.nameSync.subscribe((name: string) => {
+      this.name = name;
     });
   }
 
@@ -34,5 +41,10 @@ export class AppComponent  implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.roleSyncSubscription.unsubscribe();
+    this.nameSyncSubscription.unsubscribe();
+  }
+
+  reset() {
+    this.auth.resetAll();
   }
 }

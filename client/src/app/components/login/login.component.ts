@@ -3,7 +3,7 @@ import { FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ApiService } from 'src/app/services/api.service';
 import { AuthService } from 'src/app/services/auth.service';
-import { Role } from 'src/app/models';
+import { Role, LoginMode } from 'src/app/models';
 
 @Component({
   selector: 'app-login',
@@ -13,8 +13,12 @@ import { Role } from 'src/app/models';
 export class LoginComponent implements OnInit {
   emailFormControl: FormControl;
   passwordFormControl: FormControl;
+  nameFormControl: FormControl;
   showPasswordBlock = false;
   invalidPassword = false;
+  viewMode: LoginMode;
+  loginMode = LoginMode;
+
   constructor(
     private router: Router,
     private api: ApiService,
@@ -22,6 +26,7 @@ export class LoginComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    this.viewMode = LoginMode.EMAIL;
     this.emailFormControl = new FormControl('', [
       Validators.required,
       Validators.email
@@ -30,17 +35,24 @@ export class LoginComponent implements OnInit {
       Validators.required,
       Validators.minLength(6)
     ]);
+    this.nameFormControl = new FormControl('', [Validators.required]);
   }
 
   emailSubmit() {
     if (this.emailFormControl.status === 'VALID') {
-      this.showPasswordBlock = this.api.validateEmail(
-        this.emailFormControl.value
-      );
-      if (!this.showPasswordBlock) {
-        this.auth.setRole(Role.USER);
-        this.router.navigate(['/quiz']);
+      if (this.api.validateEmail(this.emailFormControl.value)) {
+        this.viewMode = this.loginMode.PASSWORD;
+      } else {
+        this.viewMode = this.loginMode.NAME;
       }
+    }
+  }
+
+  nameSubmit() {
+    if (this.nameFormControl.status === 'VALID') {
+      this.auth.setRole(Role.USER);
+      this.auth.setName(this.nameFormControl.value);
+      this.router.navigate(['/quiz']);
     }
   }
 

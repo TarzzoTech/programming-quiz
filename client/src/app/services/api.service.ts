@@ -13,4 +13,10 @@ export class ApiService {
   validatePwd(pwd: string): boolean {
     return true;
   }
+
+  insertData() { }
+
+  deleteData() {}
+
+  deleteRecord() {}
 }

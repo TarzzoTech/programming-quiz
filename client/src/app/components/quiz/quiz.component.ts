@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { QuesViewMode } from 'src/app/models';
 import { QuizService } from 'src/app/services/quiz.service';
 import { Subscription } from 'rxjs/internal/Subscription';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-quiz',
@@ -18,7 +19,7 @@ export class QuizComponent implements OnInit, OnDestroy {
   scoreSubscription: Subscription;
   scorecard: string;
 
-  constructor(private quiz: QuizService) {}
+  constructor(private quiz: QuizService, private auth: AuthService,) {}
 
   ngOnInit() {
     this.viewMode = QuesViewMode.INSTRUCTIONS;
@@ -65,5 +66,6 @@ export class QuizComponent implements OnInit, OnDestroy {
     this.viewMode = QuesViewMode.END;
     this.showSubmitBtn = false;
     this.quiz.Submit();
+    this.auth.resetAll();
   }
 }

@@ -5,7 +5,7 @@
             <div>Programming Quiz</div>
         </div>
         <div class="col-8 form-email-block">
-            <form class="login-form" *ngIf="!showPasswordBlock" (submit)="emailSubmit()">
+            <form class="login-form" *ngIf="viewMode === loginMode.EMAIL" (submit)="emailSubmit()">
                 <mat-form-field class="login-form-full-width">
                     <input matInput placeholder="Email" [formControl]="emailFormControl">
                     <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
@@ -16,10 +16,11 @@
                     </mat-error>
                 </mat-form-field>
             </form>
-            <form class="login-form" *ngIf="showPasswordBlock" (submit)="passwordSubmit()">
+            <form class="login-form" *ngIf="viewMode === loginMode.PASSWORD" (submit)="passwordSubmit()">
                 <mat-form-field class="login-form-full-width">
-                    <input matInput placeholder="Password" [formControl]="passwordFormControl">
-                    <mat-error *ngIf="passwordFormControl.hasError('minlength') && !passwordFormControl.hasError('required')">
+                    <input matInput type="password" placeholder="Password" [formControl]="passwordFormControl">
+                    <mat-error
+                        *ngIf="passwordFormControl.hasError('minlength') && !passwordFormControl.hasError('required')">
                         Password must be greater than 6 digits
                     </mat-error>
                     <mat-error *ngIf="passwordFormControl.hasError('required')">
@@ -27,6 +28,14 @@
                     </mat-error>
                     <mat-error *ngIf="invalidPassword">
                         Password is <strong>invalid</strong>
+                    </mat-error>
+                </mat-form-field>
+            </form>
+            <form class="login-form" *ngIf="viewMode === loginMode.NAME" (submit)="nameSubmit()">
+                <mat-form-field class="login-form-full-width">
+                    <input matInput placeholder="Full Name" [formControl]="nameFormControl">
+                    <mat-error *ngIf="nameFormControl.hasError('required')">
+                        Full Name is <strong>required</strong>
                     </mat-error>
                 </mat-form-field>
             </form>
