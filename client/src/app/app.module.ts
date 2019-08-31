@@ -25,6 +25,7 @@ import { QuizService } from './services/quiz.service';
 import { ApiService } from './services/api.service';
 import { DataEntryComponent } from './components/data-entry/data-entry.component';
 import { TrashComponent } from './components/trash/trash.component';
+import { LanguageSelectionComponent } from './components/language-selection/language-selection.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { TrashComponent } from './components/trash/trash.component';
     EndComponent,
     NoRouteComponent,
     DataEntryComponent,
-    TrashComponent
+    TrashComponent,
+    LanguageSelectionComponent
   ],
   imports: [
     BrowserModule,

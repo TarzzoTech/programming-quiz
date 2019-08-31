@@ -60,3 +60,26 @@ export const Questions = [
     Answer: 'a'
   }
 ];
+
+export const Languages = [
+  {
+    Id: '1',
+    Title: 'Javascript',
+    Questions
+  },
+  {
+    Id: '2',
+    Title: 'Java',
+    Questions
+  },
+  {
+    Id: '3',
+    Title: 'SQL',
+    Questions
+  },
+  {
+    Id: '4',
+    Title: 'C#',
+    Questions
+  }
+];

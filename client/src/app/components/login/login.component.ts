@@ -15,7 +15,6 @@ export class LoginComponent implements OnInit {
   passwordFormControl: FormControl;
   nameFormControl: FormControl;
   showPasswordBlock = false;
-  invalidPassword = false;
   viewMode: LoginMode;
   loginMode = LoginMode;
 
@@ -52,16 +51,20 @@ export class LoginComponent implements OnInit {
     if (this.nameFormControl.status === 'VALID') {
       this.auth.setRole(Role.USER);
       this.auth.setName(this.nameFormControl.value);
-      this.router.navigate(['/quiz']);
+      this.router.navigate(['/languages']);
     }
   }
 
   passwordSubmit() {
     if (this.passwordFormControl.status === 'VALID') {
-      if (this.api.validatePwd(this.passwordFormControl.value)) {
-        this.auth.setRole(Role.ADMIN);
-        this.router.navigate(['/marks-dashboard']);
-      }
+      this.api.validatePwd(this.passwordFormControl.value)
+      .then((res) => {
+        this.passwordFormControl.setErrors({ invalid: !res });
+        if (res) {
+          this.auth.setRole(Role.ADMIN);
+          this.router.navigate(['/marks-dashboard']);
+        }
+      });
     }
   }
 }

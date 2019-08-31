@@ -8,6 +8,7 @@ import { QuizComponent } from './components/quiz/quiz.component';
 import { NoRouteComponent } from './components/no-route/no-route.component';
 import { DataEntryComponent } from './components/data-entry/data-entry.component';
 import { TrashComponent } from './components/trash/trash.component';
+import { LanguageSelectionComponent } from './components/language-selection/language-selection.component';
 
 
 const routes: Routes = [
@@ -30,6 +31,10 @@ const routes: Routes = [
   {
     path: 'trash',
     component: TrashComponent
+  },
+  {
+    path: 'languages',
+    component: LanguageSelectionComponent
   },
   {
     path: 'quiz',

@@ -8,6 +8,12 @@ export interface Question {
   SelectedAnswers?: string | null | undefined;
 }
 
+export interface Language {
+  Id: string;
+  Title: string;
+  Questions: Question[];
+}
+
 export interface QuestionOption {
   a: string;
   b: string;
@@ -15,7 +21,7 @@ export interface QuestionOption {
   d: string;
 }
 
-export interface Answers {
+export interface SelectedAnswers {
   Id: string;
   Answer: string | null;
 }
