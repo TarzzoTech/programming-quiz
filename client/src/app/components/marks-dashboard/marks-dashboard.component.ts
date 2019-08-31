@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Dashboard } from 'src/app/models';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-marks-dashboard',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MarksDashboardComponent implements OnInit {
 
-  constructor() { }
+  panelOpenState = false;
+
+  displayedColumns: string[] = ['Email', 'Name', 'Score'];
+  dashboardKeys: string[] = [];
+  dataSource: Dashboard = {} as Dashboard;
+
+  constructor(private data: DataService) {}
 
   ngOnInit() {
+    this.dataSource = this.data.getDashboardData();
+    this.dashboardKeys = Object.keys(this.dataSource);
+    console.log({
+      dataSource: this.dataSource,
+      dashboardKeys: this.dashboardKeys
+    });
   }
 
 }

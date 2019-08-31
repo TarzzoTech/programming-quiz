@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import * as bcrypt from 'bcryptjs';
-import { pwdHash } from '../models';
+import { User } from '../models';
 
 @Injectable({
   providedIn: 'root'
@@ -9,11 +9,11 @@ export class ApiService {
   constructor() {}
 
   validateEmail(email: string): boolean {
-    return email === 'admin@pq.com';
+    return email === User.EmailId;
   }
 
   validatePwd(pwd: string) {
-    return bcrypt.compare(pwd, pwdHash);
+    return bcrypt.compare(pwd, User.PwdHash);
   }
 
   insertData() { }

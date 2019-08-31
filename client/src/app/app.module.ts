@@ -3,11 +3,14 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatInputModule } from '@angular/material/input';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTableModule } from '@angular/material/table';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +29,7 @@ import { ApiService } from './services/api.service';
 import { DataEntryComponent } from './components/data-entry/data-entry.component';
 import { TrashComponent } from './components/trash/trash.component';
 import { LanguageSelectionComponent } from './components/language-selection/language-selection.component';
+import { DataService } from './services/data.service';
 
 @NgModule({
   declarations: [
@@ -54,12 +58,15 @@ import { LanguageSelectionComponent } from './components/language-selection/lang
     MatTooltipModule,
     MatIconModule,
     MatRadioModule,
-    MatInputModule
+    MatInputModule,
+    MatExpansionModule,
+    MatTableModule
   ],
   providers: [
     AuthService,
     QuizService,
-    ApiService
+    ApiService,
+    DataService
   ],
   bootstrap: [AppComponent]
 })

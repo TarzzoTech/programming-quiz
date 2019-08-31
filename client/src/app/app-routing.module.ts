@@ -21,7 +21,7 @@ const routes: Routes = [
     component: QuestionsListComponent
   },
   {
-    path: 'marks-dashboard',
+    path: 'dashboard',
     component: MarksDashboardComponent
   },
   {

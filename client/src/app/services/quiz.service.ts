@@ -26,18 +26,23 @@ export class QuizService {
 
   setLanguage(langId: string) {
     this.selectedLanguage = langId;
+    this.setQuestions(this.Languages.find(l => l.Id === this.selectedLanguage).Questions.slice(0));
   }
 
   getQuestions(): Question[] {
-    if (this.selectedLanguage) {
-      return this.Languages.find(l => l.Id === this.selectedLanguage).Questions.slice(0);
-    } else {
-      return [];
-    }
+    return this.Questions.slice(0);
   }
 
   getLanguages(): Language[] {
     return this.Languages.slice(0);
+  }
+
+  getLanguageName(): string {
+    if (this.selectedLanguage) {
+      return this.Languages.find(l => l.Id === this.selectedLanguage).Title;
+    } else {
+      return '';
+    }
   }
 
   getTotalQuestions(): number {
@@ -46,7 +51,7 @@ export class QuizService {
 
   getQuestion(num: number): Question {
     if (this.selectedLanguage) {
-      return this.Languages.find(l => l.Id === this.selectedLanguage).Questions[num];
+      return this.Questions[num];
     } else {
       return {} as Question;
     }

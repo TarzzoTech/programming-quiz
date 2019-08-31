@@ -19,7 +19,7 @@ export class QuizComponent implements OnInit, OnDestroy {
   scoreSubscription: Subscription;
   scorecard: string;
 
-  constructor(private quiz: QuizService, private auth: AuthService,) {}
+  constructor(private quiz: QuizService, private auth: AuthService) {}
 
   ngOnInit() {
     this.viewMode = QuesViewMode.INSTRUCTIONS;

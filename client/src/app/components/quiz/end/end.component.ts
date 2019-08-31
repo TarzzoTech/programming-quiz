@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { QuizService } from 'src/app/services/quiz.service';
 
 @Component({
   selector: 'app-end',
@@ -7,9 +8,13 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class EndComponent implements OnInit {
 
-  @Input() scorecard: string;
-  constructor( ) { }
+  selectedLanguage: string;
 
-  ngOnInit() { }
+  @Input() scorecard: string;
+  constructor(private quiz: QuizService) { }
+
+  ngOnInit() {
+    this.selectedLanguage = this.quiz.getLanguageName();
+   }
 
 }

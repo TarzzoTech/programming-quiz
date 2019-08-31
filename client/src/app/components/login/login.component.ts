@@ -62,7 +62,7 @@ export class LoginComponent implements OnInit {
         this.passwordFormControl.setErrors({ invalid: !res });
         if (res) {
           this.auth.setRole(Role.ADMIN);
-          this.router.navigate(['/marks-dashboard']);
+          this.router.navigate(['/dashboard']);
         }
       });
     }
