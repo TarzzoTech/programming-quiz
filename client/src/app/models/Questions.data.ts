@@ -9,7 +9,9 @@ export const Questions = [
       c: 'option 3',
       d: 'option 4'
     },
-    Answer: 'a'
+    Answer: 'a',
+    LanguageId: 'JavaScript',
+    IsActive: true
   },
   {
     Id: 'sdsdfs214xsdaww3r',
@@ -21,7 +23,9 @@ export const Questions = [
       c: 'option 3',
       d: 'option 4'
     },
-    Answer: 'a'
+    Answer: 'a',
+    LanguageId: 'JavaScript',
+    IsActive: true
   },
   {
     Id: 'sdsdfs214gerxaww3r',
@@ -33,7 +37,9 @@ export const Questions = [
       c: 'option 3',
       d: 'option 4'
     },
-    Answer: 'a'
+    Answer: 'a',
+    LanguageId: 'JavaScript',
+    IsActive: true
   },
   {
     Id: 'sdsdfs21dfg4xaww3r',
@@ -45,7 +51,9 @@ export const Questions = [
       c: 'option 3',
       d: 'option 4'
     },
-    Answer: 'a'
+    Answer: 'a',
+    LanguageId: 'JavaScript',
+    IsActive: true
   },
   {
     Id: 'sdsdfs21rt4xaww3r',
@@ -57,7 +65,9 @@ export const Questions = [
       c: 'option 3',
       d: 'option 4'
     },
-    Answer: 'a'
+    Answer: 'a',
+    LanguageId: 'JavaScript',
+    IsActive: true
   }
 ];
 

@@ -9,6 +9,8 @@ import { NoRouteComponent } from './components/no-route/no-route.component';
 import { DataEntryComponent } from './components/data-entry/data-entry.component';
 import { TrashComponent } from './components/trash/trash.component';
 import { LanguageSelectionComponent } from './components/language-selection/language-selection.component';
+import { FileEntryComponent } from './components/data-entry/file-entry/file-entry.component';
+import { FormEntryComponent } from './components/data-entry/form-entry/form-entry.component';
 
 
 const routes: Routes = [
@@ -26,7 +28,21 @@ const routes: Routes = [
   },
   {
     path: 'data-entry',
-    component: DataEntryComponent
+    component: DataEntryComponent,
+    children: [
+      {
+        path: '',
+        component: FormEntryComponent
+      },
+      {
+        path: 'Edit',
+        component: FormEntryComponent
+      },
+      {
+        path: 'file',
+        component: FileEntryComponent
+      }
+    ]
   },
   {
     path: 'trash',

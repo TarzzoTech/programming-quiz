@@ -1,5 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Questions, Question, SelectedAnswers, Languages, Language } from '../models';
+import {
+  Questions,
+  Question,
+  SelectedAnswers,
+  Languages,
+  Language,
+  TOTAL_SCORE,
+  ACTUAL_SCORE,
+  DEFAULT_SCORE
+} from '../models';
 import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
@@ -7,26 +16,34 @@ import { BehaviorSubject, Subject } from 'rxjs';
 })
 export class QuizService {
   private Questions: Question[] = Questions;
-  private Languages: Language[] = Languages;
+  // Available Languages with questions
+  private AvailableLanguages: Language[] = Languages;
   selectedLanguage: string;
   onQuestionSelect: BehaviorSubject<number> = new BehaviorSubject<number>(0);
-  onSubmitQuiz: Subject<string> = new Subject<string>();
-  TotalScore = 0;
-  ActualScore = 0;
+  TotalScore = TOTAL_SCORE;
+  ActualScore = ACTUAL_SCORE;
+  DefaultScore = DEFAULT_SCORE;
 
-  constructor() {
+  constructor() { }
+
+  private calculateActualScore() {
     this.Questions.forEach(q => {
-      this.ActualScore += q.Score || 1;
+      this.ActualScore += q.Score || this.DefaultScore;
     });
   }
 
   setQuestions(questions: Question[]): void {
     this.Questions = questions;
+    this.calculateActualScore();
   }
 
   setLanguage(langId: string) {
     this.selectedLanguage = langId;
-    this.setQuestions(this.Languages.find(l => l.Id === this.selectedLanguage).Questions.slice(0));
+    this.setQuestions(
+      this.AvailableLanguages.find(l => l.Id === this.selectedLanguage).Questions.slice(
+        0
+      )
+    );
   }
 
   getQuestions(): Question[] {
@@ -34,12 +51,12 @@ export class QuizService {
   }
 
   getLanguages(): Language[] {
-    return this.Languages.slice(0);
+    return this.AvailableLanguages.slice(0);
   }
 
   getLanguageName(): string {
     if (this.selectedLanguage) {
-      return this.Languages.find(l => l.Id === this.selectedLanguage).Title;
+      return this.AvailableLanguages.find(l => l.Id === this.selectedLanguage).Title;
     } else {
       return '';
     }
@@ -66,12 +83,12 @@ export class QuizService {
     });
   }
 
-  Submit(): void {
+  calculateMyScore(): string {
     this.Questions.forEach(q => {
       if (q.Answer === q.SelectedAnswers) {
-        this.TotalScore += q.Score || 1;
+        this.TotalScore += q.Score || this.DefaultScore;
       }
     });
-    this.onSubmitQuiz.next(`${this.TotalScore}/${this.ActualScore}`);
+    return `${this.TotalScore}/${this.ActualScore}`;
   }
 }

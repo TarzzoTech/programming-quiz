@@ -53,6 +53,6 @@ export class AuthService {
     this.name = '';
     this.roleSync.next(this.role);
     this.nameSync.next(this.name);
-    this.storage.clear();
+    // this.storage.clear();
   }
 }

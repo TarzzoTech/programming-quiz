@@ -11,6 +11,8 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatInputModule } from '@angular/material/input';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatListModule } from '@angular/material/list';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,6 +32,8 @@ import { DataEntryComponent } from './components/data-entry/data-entry.component
 import { TrashComponent } from './components/trash/trash.component';
 import { LanguageSelectionComponent } from './components/language-selection/language-selection.component';
 import { DataService } from './services/data.service';
+import { FileEntryComponent } from './components/data-entry/file-entry/file-entry.component';
+import { FormEntryComponent } from './components/data-entry/form-entry/form-entry.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +48,9 @@ import { DataService } from './services/data.service';
     NoRouteComponent,
     DataEntryComponent,
     TrashComponent,
-    LanguageSelectionComponent
+    LanguageSelectionComponent,
+    FileEntryComponent,
+    FormEntryComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +66,9 @@ import { DataService } from './services/data.service';
     MatRadioModule,
     MatInputModule,
     MatExpansionModule,
-    MatTableModule
+    MatTableModule,
+    MatAutocompleteModule,
+    MatListModule
   ],
   providers: [
     AuthService,

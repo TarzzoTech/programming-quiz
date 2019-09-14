@@ -1,29 +1,30 @@
 import { Injectable } from '@angular/core';
-import { Dashboard, DashboardData, Question } from '../models';
-import { DataEntry } from '../models/DataEntry';
+import { Dashboard, DashboardData, Question, LanguageStructure, LanguagesList, DataEntry } from '../models';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
 
+  // date wise score details storage
   private DashboardData: Dashboard = DashboardData;
+  // list of languages storage
+  private LanguagesList: LanguageStructure[] = LanguagesList;
+  // file data entry list of language based questions storage
   private QuizData: DataEntry[] = [];
+  // subscribe on question edit click
+  onEditQuestion: BehaviorSubject<string> = new BehaviorSubject<string>('');
 
   constructor() { }
 
+  // set list of score details of the users on Admin login success
   setDashboardData(dashboardData: Dashboard): void {
     this.DashboardData = dashboardData;
   }
 
   getDashboardData(): Dashboard {
     return JSON.parse(JSON.stringify(this.DashboardData));
-  }
-
-  dataEntry(dataList: any[] = []): DataEntry[] {
-    const res = this.dataReStructure(dataList);
-    this.QuizData.push(...res);
-    return this.QuizData.slice(0);
   }
 
   setQuizData(dataEntry: DataEntry[]): void {
@@ -34,7 +35,24 @@ export class DataService {
     return this.QuizData.slice(0);
   }
 
-  dataReStructure(dataList: any[] = []): DataEntry[] {
+  // set list of languages on data entry page load
+  setLanguagesCollection(languagesList: LanguageStructure[]): void {
+    this.LanguagesList = languagesList;
+  }
+
+  getLanguagesCollection(): LanguageStructure[] {
+    return this.LanguagesList.slice(0);
+  }
+
+  // file data entry business/functions --> currently not in use but implemented
+  // validation for mandatory fields are pending
+  dataEntry(dataList: any[] = []): DataEntry[] {
+    const res = this.dataReStructure(dataList);
+    this.QuizData.push(...res);
+    return this.QuizData.slice(0);
+  }
+
+  private dataReStructure(dataList: any[] = []): DataEntry[] {
     const dataEntry: DataEntry[] = [];
     if (dataList.length > 0) {
       const languagesList: string[] = this.getLanguagesList(dataList);
@@ -48,7 +66,7 @@ export class DataService {
     return dataEntry;
   }
 
-  getLanguagesList(list: any[] = []): string[] {
+  private getLanguagesList(list: any[] = []): string[] {
     const languagesList: string[] = [];
     if (list.length > 0) {
       list.forEach(l => {
@@ -60,7 +78,7 @@ export class DataService {
     return languagesList;
   }
 
-  buildQuestionsList(dataList: any[] = [], language: string): Question[] {
+  private buildQuestionsList(dataList: any[] = [], language: string): Question[] {
    const questions: Question[] = [];
    if (dataList.length > 0 && language) {
     const data = dataList.filter(d => d.Language === language);

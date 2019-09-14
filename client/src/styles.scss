@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "./mixins";
+
 html {
   height: 100%;
   body {
@@ -34,6 +36,14 @@ html {
         bottom: 5%;
         right: 5%;
       }
+    }
+
+    .mat-autocomplete-panel {
+      @include custom-scroll();
+    }
+
+    .cursor-pointer {
+      cursor: pointer !important;
     }
   }
 }

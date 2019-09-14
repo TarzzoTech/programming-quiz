@@ -1,5 +1,6 @@
 // mixins
 
+// score card mixins start
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
@@ -40,6 +41,8 @@
   -o-transition-timing-function: $timing;
   transition-timing-function: $timing;
 }
+
+// score card mixins End
 
 @mixin custom-scroll() {
   /* width */
