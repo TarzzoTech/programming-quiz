@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Language } from 'src/app/models';
+import { Language, LanguageStructure, Question } from 'src/app/models';
 import { QuizService } from 'src/app/services/quiz.service';
 import { Router } from '@angular/router';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-language-selection',
@@ -11,13 +12,17 @@ import { Router } from '@angular/router';
 export class LanguageSelectionComponent implements OnInit {
 
   selectedLanguage: string;
-  languages: Language[] = [];
+  availableLanguages: LanguageStructure[] = [];
 
   constructor(
     private router: Router,
-    private quiz: QuizService
+    private quiz: QuizService,
+    private api: ApiService
   ) {
-    this.languages = this.quiz.getLanguages();
+    this.api.getAvailableLanguages().then((availableLanguages: LanguageStructure[]) => {
+      this.availableLanguages = availableLanguages;
+      this.quiz.setAvailableLanguages(availableLanguages);
+    });
   }
 
   ngOnInit() {
@@ -29,7 +34,10 @@ export class LanguageSelectionComponent implements OnInit {
   }
 
   onContinue() {
-    this.router.navigate(['/quiz']);
+    this.api.getQuestionsByLanguage(this.selectedLanguage).then((questionsList: Question[]) => {
+      this.quiz.setQuestions(questionsList);
+      this.router.navigate(['/quiz']);
+    });
   }
 
 }

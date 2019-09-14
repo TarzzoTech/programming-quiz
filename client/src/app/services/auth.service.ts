@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Role } from '../models';
+import { Role, UserDetails } from '../models';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
@@ -8,6 +8,7 @@ import { BehaviorSubject } from 'rxjs';
 export class AuthService {
   private role: Role;
   private name: string;
+  private email: string;
   private storage = localStorage;
 
   roleSync: BehaviorSubject<Role> = new BehaviorSubject<Role>(null);
@@ -15,6 +16,19 @@ export class AuthService {
 
   constructor() {
     this.init();
+  }
+
+  setEmail(email: string) {
+    this.storage.removeItem('email');
+    this.storage.setItem('email', email);
+    this.email = email;
+  }
+
+  getUserDetails(): UserDetails {
+    return {
+      Name: this.name,
+      Email: this.email
+    };
   }
 
   init() {
@@ -27,6 +41,11 @@ export class AuthService {
     if (name) {
       this.name = name;
       this.nameSync.next(name);
+    }
+
+    const email = this.storage.getItem('email');
+    if (email) {
+      this.email = email;
     }
   }
 
@@ -53,6 +72,8 @@ export class AuthService {
     this.name = '';
     this.roleSync.next(this.role);
     this.nameSync.next(this.name);
+    this.storage.setItem('name', undefined);
+    this.storage.setItem('role', undefined);
     // this.storage.clear();
   }
 }

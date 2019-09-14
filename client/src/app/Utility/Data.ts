@@ -1,6 +1,6 @@
 import { Language, Question, LanguageStructure } from '../models';
 
-const getLanguagesList = (list: Question[] = []): string[] => {
+export const getLanguagesList = (list: Question[] = []): string[] => {
   const languagesList: string[] = [];
   if (list.length > 0) {
     list.forEach(l => {

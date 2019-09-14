@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy, EventEmitter, Output } from '@angular/cor
 import { Question, SelectedAnswers } from 'src/app/models';
 import { Subscription } from 'rxjs';
 import { QuizService } from 'src/app/services/quiz.service';
+// import { EmptyQuestionBuilder } from 'src/app/builders';
 
 @Component({
   selector: 'app-questions',
@@ -17,7 +18,9 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   // tslint:disable-next-line: no-output-on-prefix
   @Output() onSelect: EventEmitter<SelectedAnswers> = new EventEmitter<SelectedAnswers>();
 
-  constructor(private quiz: QuizService) {}
+  constructor(private quiz: QuizService) {
+    // this.question = new EmptyQuestionBuilder().question;
+  }
 
   ngOnInit() {
     this.questionSelectSubscription = this.quiz.onQuestionSelect.subscribe((qNum) => {

@@ -1,5 +1,6 @@
 import { Dashboard } from './Dashboard';
 
+// new Date().toDateString()
 export const DashboardData: Dashboard = {
     'Sat Aug 31 2019': [
         {

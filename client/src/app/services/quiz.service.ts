@@ -3,6 +3,7 @@ import {
   Questions,
   Question,
   SelectedAnswers,
+  LanguageStructure,
   Languages,
   Language,
   TOTAL_SCORE,
@@ -17,16 +18,17 @@ import { BehaviorSubject, Subject } from 'rxjs';
 export class QuizService {
   private Questions: Question[] = Questions;
   // Available Languages with questions
-  private AvailableLanguages: Language[] = Languages;
-  selectedLanguage: string;
+  private AvailableLanguages: LanguageStructure[] = [];
+  private selectedLanguage: string;
   onQuestionSelect: BehaviorSubject<number> = new BehaviorSubject<number>(0);
-  TotalScore = TOTAL_SCORE;
-  ActualScore = ACTUAL_SCORE;
-  DefaultScore = DEFAULT_SCORE;
+  private TotalScore = TOTAL_SCORE;
+  private ActualScore = ACTUAL_SCORE;
+  private DefaultScore = DEFAULT_SCORE;
 
   constructor() { }
 
   private calculateActualScore() {
+    this.ActualScore = ACTUAL_SCORE;
     this.Questions.forEach(q => {
       this.ActualScore += q.Score || this.DefaultScore;
     });
@@ -39,24 +41,23 @@ export class QuizService {
 
   setLanguage(langId: string) {
     this.selectedLanguage = langId;
-    this.setQuestions(
-      this.AvailableLanguages.find(l => l.Id === this.selectedLanguage).Questions.slice(
-        0
-      )
-    );
   }
 
   getQuestions(): Question[] {
     return this.Questions.slice(0);
   }
 
-  getLanguages(): Language[] {
+  setAvailableLanguages(availableLanguages: LanguageStructure[]) {
+    this.AvailableLanguages = availableLanguages;
+  }
+
+  getLanguages(): LanguageStructure[] {
     return this.AvailableLanguages.slice(0);
   }
 
   getLanguageName(): string {
     if (this.selectedLanguage) {
-      return this.AvailableLanguages.find(l => l.Id === this.selectedLanguage).Title;
+      return this.AvailableLanguages.find(l => l.code === this.selectedLanguage).name;
     } else {
       return '';
     }
@@ -84,6 +85,7 @@ export class QuizService {
   }
 
   calculateMyScore(): string {
+    this.TotalScore = TOTAL_SCORE;
     this.Questions.forEach(q => {
       if (q.Answer === q.SelectedAnswers) {
         this.TotalScore += q.Score || this.DefaultScore;

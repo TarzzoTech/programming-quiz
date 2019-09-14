@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as bcrypt from 'bcryptjs';
-import { User, Question, LanguagesList, LanguageStructure } from '../models';
+import { User, Question, LanguagesList, LanguageStructure, QuizEntryResponse } from '../models';
+import { getLanguagesList } from '../Utility';
 
 const storage = localStorage;
 @Injectable({
@@ -30,7 +31,7 @@ export class ApiService {
     return new Promise((resolve, reject) => {
       try {
         const quizDataCollectionSting = storage.getItem('QuizDataCollection');
-        let quizDataCollection: Question[] = [];
+        let quizDataCollection: QuizEntryResponse[] = [];
         if (quizDataCollectionSting) {
           quizDataCollection = JSON.parse(quizDataCollectionSting);
         } else {
@@ -44,11 +45,12 @@ export class ApiService {
   }
 
   // insert user's quiz data
-  insertUserQuiz(data: any) {
+  // QuizEntryResponse change to QuizEntry after actual API implemented
+  insertUserQuiz(data: QuizEntryResponse) {
     return new Promise((resolve, reject) => {
       try {
         const quizDataCollectionSting = storage.getItem('QuizDataCollection');
-        let quizDataCollection: Question[] = [];
+        let quizDataCollection: QuizEntryResponse[] = [];
         if (quizDataCollectionSting) {
           quizDataCollection = JSON.parse(quizDataCollectionSting);
         }
@@ -80,6 +82,30 @@ export class ApiService {
         resolve(languagesCollection);
       } catch (error) {
         reject('Fetching Languages Collection is failed!');
+      }
+    });
+  }
+
+  getAvailableLanguages() {
+    return new Promise((resolve, reject) => {
+      try {
+        const languagesCollectionSting = storage.getItem('LanguagesCollection');
+        const questionsListSting = storage.getItem('QuestionsList');
+        let languagesCollection: LanguageStructure[] = [];
+        let questionsList: Question[] = [];
+        if (languagesCollectionSting) {
+          languagesCollection = JSON.parse(languagesCollectionSting);
+        } else {
+          storage.setItem('LanguagesCollection', JSON.stringify(LanguagesList));
+        }
+        if (questionsListSting) {
+          questionsList = JSON.parse(questionsListSting);
+          const languagesIdList = getLanguagesList(questionsList);
+          languagesCollection = languagesCollection.filter(lang => languagesIdList.includes(lang.code));
+        }
+        resolve(languagesCollection);
+      } catch (error) {
+        reject('Fetching Available Languages is failed!');
       }
     });
   }

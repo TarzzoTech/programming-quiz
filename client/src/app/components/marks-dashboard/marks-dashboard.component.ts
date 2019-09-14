@@ -20,10 +20,6 @@ export class MarksDashboardComponent implements OnInit {
   ngOnInit() {
     this.dataSource = this.data.getDashboardData();
     this.dashboardKeys = Object.keys(this.dataSource);
-    console.log({
-      dataSource: this.dataSource,
-      dashboardKeys: this.dashboardKeys
-    });
   }
 
 }
