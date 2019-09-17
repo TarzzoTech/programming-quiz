@@ -7,10 +7,10 @@ export class EmptyQuestionBuilder {
     Title: '',
     Description: '',
     Options: {
-      a: '',
-      b: '',
-      c: '',
-      d: ''
+      A: '',
+      B: '',
+      C: '',
+      D: ''
     },
     Answer: '',
     LanguageId: '',

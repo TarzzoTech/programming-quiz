@@ -57,7 +57,7 @@ export class QuizService {
 
   getLanguageName(): string {
     if (this.selectedLanguage) {
-      return this.AvailableLanguages.find(l => l.code === this.selectedLanguage).name;
+      return this.AvailableLanguages.find(l => l.Code === this.selectedLanguage).Name;
     } else {
       return '';
     }

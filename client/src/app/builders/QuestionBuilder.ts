@@ -7,10 +7,10 @@ export class QuestionBuilder {
     Title: '',
     Description: '',
     Options: {
-      a: '',
-      b: '',
-      c: '',
-      d: ''
+      A: '',
+      B: '',
+      C: '',
+      D: ''
     },
     Answer: '',
     LanguageId: '',
@@ -24,10 +24,10 @@ export class QuestionBuilder {
     this.question.Title = questionsEntry.Title;
     this.question.Answer = questionsEntry.Answer;
     this.question.Description = questionsEntry.Description;
-    this.question.Options.a = questionsEntry.OptionA;
-    this.question.Options.b = questionsEntry.OptionB;
-    this.question.Options.c = questionsEntry.OptionC;
-    this.question.Options.d = questionsEntry.OptionD;
+    this.question.Options.A = questionsEntry.OptionA;
+    this.question.Options.B = questionsEntry.OptionB;
+    this.question.Options.C = questionsEntry.OptionC;
+    this.question.Options.D = questionsEntry.OptionD;
     this.question.Score = questionsEntry.Score;
     this.question.SelectedAnswers = '';
     this.question.IsActive = true;

@@ -88,10 +88,10 @@ export class DataService {
         question.Answer = d.Answer;
         question.Description = d.Description;
         question.Options = {
-          a: d.OptionA,
-          b: d.OptionB,
-          c: d.OptionC,
-          d: d.OptionD
+          A: d.OptionA,
+          B: d.OptionB,
+          C: d.OptionC,
+          D: d.OptionD
         };
         question.Score = d.Score || 5;
         question.Title = d.Question;

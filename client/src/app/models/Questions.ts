@@ -5,8 +5,8 @@ export interface Question {
   Description: string;
   Options: QuestionOption;
   Answer: string;
-  Score?: number;
-  SelectedAnswers?: string | null | undefined;
+  Score: number;
+  SelectedAnswers: string | null | undefined;
   IsActive: boolean;
 }
 
@@ -17,15 +17,15 @@ export interface Language {
 }
 
 export interface LanguageStructure {
-  name: string;
-  code: string;
+  Name: string;
+  Code: string;
 }
 
 export interface QuestionOption {
-  a: string;
-  b: string;
-  c?: string;
-  d?: string;
+  A: string;
+  B: string;
+  C: string;
+  D: string;
 }
 
 export interface SelectedAnswers {

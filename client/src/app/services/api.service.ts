@@ -101,7 +101,7 @@ export class ApiService {
         if (questionsListSting) {
           questionsList = JSON.parse(questionsListSting);
           const languagesIdList = getLanguagesList(questionsList);
-          languagesCollection = languagesCollection.filter(lang => languagesIdList.includes(lang.code));
+          languagesCollection = languagesCollection.filter(lang => languagesIdList.includes(lang.Code));
         }
         resolve(languagesCollection);
       } catch (error) {

@@ -16,10 +16,10 @@ export class QuestionsEntryBuilder {
             this.questionsEntry.LanguageId = defaultEntry.LanguageId;
             this.questionsEntry.Answer = defaultEntry.Answer;
             this.questionsEntry.Description = defaultEntry.Description;
-            this.questionsEntry.OptionA = defaultEntry.Options.a;
-            this.questionsEntry.OptionB = defaultEntry.Options.b;
-            this.questionsEntry.OptionC = defaultEntry.Options.c;
-            this.questionsEntry.OptionD = defaultEntry.Options.d;
+            this.questionsEntry.OptionA = defaultEntry.Options.A;
+            this.questionsEntry.OptionB = defaultEntry.Options.B;
+            this.questionsEntry.OptionC = defaultEntry.Options.C;
+            this.questionsEntry.OptionD = defaultEntry.Options.D;
             this.questionsEntry.Title = defaultEntry.Title;
             this.questionsEntry.Score = defaultEntry.Score;
         }

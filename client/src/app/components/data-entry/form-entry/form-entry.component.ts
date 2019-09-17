@@ -70,13 +70,13 @@ export class FormEntryComponent implements OnInit, OnDestroy {
   }
 
   displayFn = (langCode?: string): string | undefined => {
-    const language = this.languagesList.find(lang => lang.code === langCode);
-    return language ? language.name : undefined;
+    const language = this.languagesList.find(lang => lang.Code === langCode);
+    return language ? language.Name : undefined;
   }
 
   private _filter(name: string): LanguageStructure[] {
     const filterValue = name.toLowerCase();
-    return this.languagesList.filter(option => option.name.toLowerCase().indexOf(filterValue) === 0);
+    return this.languagesList.filter(option => option.Name.toLowerCase().indexOf(filterValue) === 0);
   }
 
   createForm(questionsEntry: QuestionsEntry) {

@@ -45,7 +45,7 @@ export const dataReStructure = (dataList: Question[] = [], languageCollection: L
     languagesList.forEach(language => {
       const entry: Language = {} as Language;
       entry.Id = language;
-      entry.Title = languageCollection.find(lang => lang.code === language).name;
+      entry.Title = languageCollection.find(lang => lang.Code === language).Name;
       entry.Questions = buildQuestionsList(dataList, language);
       dataEntry.push(entry);
     });

@@ -11,8 +11,8 @@
           <input type="text" placeholder="Language" matInput formControlName='LanguageId' [matAutocomplete]="auto"
             required>
           <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
-            <mat-option *ngFor="let option of filteredOptions | async" [value]="option.code">
-              {{option.name}}
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option.Code">
+              {{option.Name}}
             </mat-option>
           </mat-autocomplete>
         </mat-form-field>

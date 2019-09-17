@@ -1,2822 +1,2822 @@
 export const LanguagesList = [
     {
-      name: 'A# .NET',
-      code: 'Asharp_dot_NET'
+      Name: 'A# .NET',
+      Code: 'Asharp_dot_NET'
     },
     {
-      name: 'A# (Axiom)',
-      code: 'Asharp_(Axiom)'
+      Name: 'A# (Axiom)',
+      Code: 'Asharp_(Axiom)'
     },
     {
-      name: 'A-0 System',
-      code: 'A-0_System'
+      Name: 'A-0 System',
+      Code: 'A-0_System'
     },
     {
-      name: 'A+',
-      code: 'A+'
+      Name: 'A+',
+      Code: 'A+'
     },
     {
-      name: 'A++',
-      code: 'A++'
+      Name: 'A++',
+      Code: 'A++'
     },
     {
-      name: 'ABAP',
-      code: 'ABAP'
+      Name: 'ABAP',
+      Code: 'ABAP'
     },
     {
-      name: 'ABC',
-      code: 'ABC'
+      Name: 'ABC',
+      Code: 'ABC'
     },
     {
-      name: 'ABC ALGOL',
-      code: 'ABC_ALGOL'
+      Name: 'ABC ALGOL',
+      Code: 'ABC_ALGOL'
     },
     {
-      name: 'ABLE',
-      code: 'ABLE'
+      Name: 'ABLE',
+      Code: 'ABLE'
     },
     {
-      name: 'ABSET',
-      code: 'ABSET'
+      Name: 'ABSET',
+      Code: 'ABSET'
     },
     {
-      name: 'ABSYS',
-      code: 'ABSYS'
+      Name: 'ABSYS',
+      Code: 'ABSYS'
     },
     {
-      name: 'ACC',
-      code: 'ACC'
+      Name: 'ACC',
+      Code: 'ACC'
     },
     {
-      name: 'Accent',
-      code: 'Accent'
+      Name: 'Accent',
+      Code: 'Accent'
     },
     {
-      name: 'Ace DASL',
-      code: 'Ace_DASL'
+      Name: 'Ace DASL',
+      Code: 'Ace_DASL'
     },
     {
-      name: 'ACL2',
-      code: 'ACL2'
+      Name: 'ACL2',
+      Code: 'ACL2'
     },
     {
-      name: 'ACT-III',
-      code: 'ACT-III'
+      Name: 'ACT-III',
+      Code: 'ACT-III'
     },
     {
-      name: 'Action!',
-      code: 'Action!'
+      Name: 'Action!',
+      Code: 'Action!'
     },
     {
-      name: 'ActionScript',
-      code: 'ActionScript'
+      Name: 'ActionScript',
+      Code: 'ActionScript'
     },
     {
-      name: 'Ada',
-      code: 'Ada'
+      Name: 'Ada',
+      Code: 'Ada'
     },
     {
-      name: 'Adenine',
-      code: 'Adenine'
+      Name: 'Adenine',
+      Code: 'Adenine'
     },
     {
-      name: 'Agda',
-      code: 'Agda'
+      Name: 'Agda',
+      Code: 'Agda'
     },
     {
-      name: 'Agilent VEE',
-      code: 'Agilent_VEE'
+      Name: 'Agilent VEE',
+      Code: 'Agilent_VEE'
     },
     {
-      name: 'Agora',
-      code: 'Agora'
+      Name: 'Agora',
+      Code: 'Agora'
     },
     {
-      name: 'AIMMS',
-      code: 'AIMMS'
+      Name: 'AIMMS',
+      Code: 'AIMMS'
     },
     {
-      name: 'Alef',
-      code: 'Alef'
+      Name: 'Alef',
+      Code: 'Alef'
     },
     {
-      name: 'ALF',
-      code: 'ALF'
+      Name: 'ALF',
+      Code: 'ALF'
     },
     {
-      name: 'ALGOL 58',
-      code: 'ALGOL_58'
+      Name: 'ALGOL 58',
+      Code: 'ALGOL_58'
     },
     {
-      name: 'ALGOL 60',
-      code: 'ALGOL_60'
+      Name: 'ALGOL 60',
+      Code: 'ALGOL_60'
     },
     {
-      name: 'ALGOL 68',
-      code: 'ALGOL_68'
+      Name: 'ALGOL 68',
+      Code: 'ALGOL_68'
     },
     {
-      name: 'ALGOL W',
-      code: 'ALGOL_W'
+      Name: 'ALGOL W',
+      Code: 'ALGOL_W'
     },
     {
-      name: 'Alice',
-      code: 'Alice'
+      Name: 'Alice',
+      Code: 'Alice'
     },
     {
-      name: 'Alma-0',
-      code: 'Alma-0'
+      Name: 'Alma-0',
+      Code: 'Alma-0'
     },
     {
-      name: 'AmbientTalk',
-      code: 'AmbientTalk'
+      Name: 'AmbientTalk',
+      Code: 'AmbientTalk'
     },
     {
-      name: 'Amiga E',
-      code: 'Amiga_E'
+      Name: 'Amiga E',
+      Code: 'Amiga_E'
     },
     {
-      name: 'AMOS',
-      code: 'AMOS'
+      Name: 'AMOS',
+      Code: 'AMOS'
     },
     {
-      name: 'AMPL',
-      code: 'AMPL'
+      Name: 'AMPL',
+      Code: 'AMPL'
     },
     {
-      name: 'APL',
-      code: 'APL'
+      Name: 'APL',
+      Code: 'APL'
     },
     {
-      name: 'App Inventor for Android\'s visual block language',
-      code: 'App_Inventor_for_Android\'s_visual_block_language'
+      Name: 'App Inventor for Android\'s visual block language',
+      Code: 'App_Inventor_for_Android\'s_visual_block_language'
     },
     {
-      name: 'AppleScript',
-      code: 'AppleScript'
+      Name: 'AppleScript',
+      Code: 'AppleScript'
     },
     {
-      name: 'Arc',
-      code: 'Arc'
+      Name: 'Arc',
+      Code: 'Arc'
     },
     {
-      name: 'ARexx',
-      code: 'ARexx'
+      Name: 'ARexx',
+      Code: 'ARexx'
     },
     {
-      name: 'Argus',
-      code: 'Argus'
+      Name: 'Argus',
+      Code: 'Argus'
     },
     {
-      name: 'AspectJ',
-      code: 'AspectJ'
+      Name: 'AspectJ',
+      Code: 'AspectJ'
     },
     {
-      name: 'Assembly language',
-      code: 'Assembly_language'
+      Name: 'Assembly language',
+      Code: 'Assembly_language'
     },
     {
-      name: 'ATS',
-      code: 'ATS'
+      Name: 'ATS',
+      Code: 'ATS'
     },
     {
-      name: 'Ateji PX',
-      code: 'Ateji_PX'
+      Name: 'Ateji PX',
+      Code: 'Ateji_PX'
     },
     {
-      name: 'AutoHotkey',
-      code: 'AutoHotkey'
+      Name: 'AutoHotkey',
+      Code: 'AutoHotkey'
     },
     {
-      name: 'Autocoder',
-      code: 'Autocoder'
+      Name: 'AutoCoder',
+      Code: 'AutoCoder'
     },
     {
-      name: 'AutoIt',
-      code: 'AutoIt'
+      Name: 'AutoIt',
+      Code: 'AutoIt'
     },
     {
-      name: 'AutoLISP / Visual LISP',
-      code: 'AutoLISP_/_Visual_LISP'
+      Name: 'AutoLISP / Visual LISP',
+      Code: 'AutoLISP_/_Visual_LISP'
     },
     {
-      name: 'Averest',
-      code: 'Averest'
+      Name: 'Averest',
+      Code: 'Averest'
     },
     {
-      name: 'AWK',
-      code: 'AWK'
+      Name: 'AWK',
+      Code: 'AWK'
     },
     {
-      name: 'Axum',
-      code: 'Axum'
+      Name: 'Axum',
+      Code: 'Axum'
     },
     {
-      name: 'B',
-      code: 'B'
+      Name: 'B',
+      Code: 'B'
     },
     {
-      name: 'Babbage',
-      code: 'Babbage'
+      Name: 'Babbage',
+      Code: 'Babbage'
     },
     {
-      name: 'Bash',
-      code: 'Bash'
+      Name: 'Bash',
+      Code: 'Bash'
     },
     {
-      name: 'BASIC',
-      code: 'BASIC'
+      Name: 'BASIC',
+      Code: 'BASIC'
     },
     {
-      name: 'bc',
-      code: 'bc'
+      Name: 'bc',
+      Code: 'bc'
     },
     {
-      name: 'BCPL',
-      code: 'BCPL'
+      Name: 'BCPL',
+      Code: 'BCPL'
     },
     {
-      name: 'BeanShell',
-      code: 'BeanShell'
+      Name: 'BeanShell',
+      Code: 'BeanShell'
     },
     {
-      name: 'Batch (Windows/Dos)',
-      code: 'Batch_(Windows/Dos)'
+      Name: 'Batch (Windows/Dos)',
+      Code: 'Batch_(Windows/Dos)'
     },
     {
-      name: 'Bertrand',
-      code: 'Bertrand'
+      Name: 'Bertrand',
+      Code: 'Bertrand'
     },
     {
-      name: 'BETA',
-      code: 'BETA'
+      Name: 'BETA',
+      Code: 'BETA'
     },
     {
-      name: 'Bigwig',
-      code: 'Bigwig'
+      Name: 'Bigwig',
+      Code: 'Bigwig'
     },
     {
-      name: 'Bistro',
-      code: 'Bistro'
+      Name: 'Bistro',
+      Code: 'Bistro'
     },
     {
-      name: 'BitC',
-      code: 'BitC'
+      Name: 'BitC',
+      Code: 'BitC'
     },
     {
-      name: 'BLISS',
-      code: 'BLISS'
+      Name: 'BLISS',
+      Code: 'BLISS'
     },
     {
-      name: 'Blue',
-      code: 'Blue'
+      Name: 'Blue',
+      Code: 'Blue'
     },
     {
-      name: 'Bon',
-      code: 'Bon'
+      Name: 'Bon',
+      Code: 'Bon'
     },
     {
-      name: 'Boo',
-      code: 'Boo'
+      Name: 'Boo',
+      Code: 'Boo'
     },
     {
-      name: 'Boomerang',
-      code: 'Boomerang'
+      Name: 'Boomerang',
+      Code: 'Boomerang'
     },
     {
-      name: 'Bourne shell',
-      code: 'Bourne_shell'
+      Name: 'Bourne shell',
+      Code: 'Bourne_shell'
     },
     {
-      name: 'bash',
-      code: 'bash'
+      Name: 'bash',
+      Code: 'bash'
     },
     {
-      name: 'ksh',
-      code: 'ksh'
+      Name: 'ksh',
+      Code: 'ksh'
     },
     {
-      name: 'BREW',
-      code: 'BREW'
+      Name: 'BREW',
+      Code: 'BREW'
     },
     {
-      name: 'BPEL',
-      code: 'BPEL'
+      Name: 'BPEL',
+      Code: 'BPEL'
     },
     {
-      name: 'C',
-      code: 'C'
+      Name: 'C',
+      Code: 'C'
     },
     {
-      name: 'C--',
-      code: 'C--'
+      Name: 'C--',
+      Code: 'C--'
     },
     {
-      name: 'C++',
-      code: 'C++'
+      Name: 'C++',
+      Code: 'C++'
     },
     {
-      name: 'C#',
-      code: 'Csharp'
+      Name: 'C#',
+      Code: 'Csharp'
     },
     {
-      name: 'C/AL',
-      code: 'C/AL'
+      Name: 'C/AL',
+      Code: 'C/AL'
     },
     {
-      name: 'Caché ObjectScript',
-      code: 'Caché_ObjectScript'
+      Name: 'Caché ObjectScript',
+      Code: 'Caché_ObjectScript'
     },
     {
-      name: 'C Shell',
-      code: 'C_Shell'
+      Name: 'C Shell',
+      Code: 'C_Shell'
     },
     {
-      name: 'Caml',
-      code: 'Caml'
+      Name: 'Caml',
+      Code: 'Caml'
     },
     {
-      name: 'Candle',
-      code: 'Candle'
+      Name: 'Candle',
+      Code: 'Candle'
     },
     {
-      name: 'Cayenne',
-      code: 'Cayenne'
+      Name: 'Cayenne',
+      Code: 'Cayenne'
     },
     {
-      name: 'CDuce',
-      code: 'CDuce'
+      Name: 'CDuce',
+      Code: 'CDuce'
     },
     {
-      name: 'Cecil',
-      code: 'Cecil'
+      Name: 'Cecil',
+      Code: 'Cecil'
     },
     {
-      name: 'Cel',
-      code: 'Cel'
+      Name: 'Cel',
+      Code: 'Cel'
     },
     {
-      name: 'Cesil',
-      code: 'Cesil'
+      Name: 'Cesil',
+      Code: 'Cesil'
     },
     {
-      name: 'Ceylon',
-      code: 'Ceylon'
+      Name: 'Ceylon',
+      Code: 'Ceylon'
     },
     {
-      name: 'CFEngine',
-      code: 'CFEngine'
+      Name: 'CFEngine',
+      Code: 'CFEngine'
     },
     {
-      name: 'CFML',
-      code: 'CFML'
+      Name: 'CFML',
+      Code: 'CFML'
     },
     {
-      name: 'Cg',
-      code: 'Cg'
+      Name: 'Cg',
+      Code: 'Cg'
     },
     {
-      name: 'Ch',
-      code: 'Ch'
+      Name: 'Ch',
+      Code: 'Ch'
     },
     {
-      name: 'Chapel',
-      code: 'Chapel'
+      Name: 'Chapel',
+      Code: 'Chapel'
     },
     {
-      name: 'CHAIN',
-      code: 'CHAIN'
+      Name: 'CHAIN',
+      Code: 'CHAIN'
     },
     {
-      name: 'Charity',
-      code: 'Charity'
+      Name: 'Charity',
+      Code: 'Charity'
     },
     {
-      name: 'Charm',
-      code: 'Charm'
+      Name: 'Charm',
+      Code: 'Charm'
     },
     {
-      name: 'Chef',
-      code: 'Chef'
+      Name: 'Chef',
+      Code: 'Chef'
     },
     {
-      name: 'CHILL',
-      code: 'CHILL'
+      Name: 'CHILL',
+      Code: 'CHILL'
     },
     {
-      name: 'CHIP-8',
-      code: 'CHIP-8'
+      Name: 'CHIP-8',
+      Code: 'CHIP-8'
     },
     {
-      name: 'chomski',
-      code: 'chomski'
+      Name: 'chomski',
+      Code: 'chomski'
     },
     {
-      name: 'ChucK',
-      code: 'ChucK'
+      Name: 'ChucK',
+      Code: 'ChucK'
     },
     {
-      name: 'CICS',
-      code: 'CICS'
+      Name: 'CICS',
+      Code: 'CICS'
     },
     {
-      name: 'Cilk',
-      code: 'Cilk'
+      Name: 'Cilk',
+      Code: 'Cilk'
     },
     {
-      name: 'CL',
-      code: 'CL'
+      Name: 'CL',
+      Code: 'CL'
     },
     {
-      name: 'Claire',
-      code: 'Claire'
+      Name: 'Claire',
+      Code: 'Claire'
     },
     {
-      name: 'Clarion',
-      code: 'Clarion'
+      Name: 'Clarion',
+      Code: 'Clarion'
     },
     {
-      name: 'Clean',
-      code: 'Clean'
+      Name: 'Clean',
+      Code: 'Clean'
     },
     {
-      name: 'Clipper',
-      code: 'Clipper'
+      Name: 'Clipper',
+      Code: 'Clipper'
     },
     {
-      name: 'CLIST',
-      code: 'CLIST'
+      Name: 'CLIST',
+      Code: 'CLIST'
     },
     {
-      name: 'Clojure',
-      code: 'Clojure'
+      Name: 'Clojure',
+      Code: 'Clojure'
     },
     {
-      name: 'CLU',
-      code: 'CLU'
+      Name: 'CLU',
+      Code: 'CLU'
     },
     {
-      name: 'CMS-2',
-      code: 'CMS-2'
+      Name: 'CMS-2',
+      Code: 'CMS-2'
     },
     {
-      name: 'COBOL',
-      code: 'COBOL'
+      Name: 'COBOL',
+      Code: 'COBOL'
     },
     {
-      name: 'Cobra',
-      code: 'Cobra'
+      Name: 'Cobra',
+      Code: 'Cobra'
     },
     {
-      name: 'CODE',
-      code: 'CODE'
+      Name: 'Code',
+      Code: 'Code'
     },
     {
-      name: 'CoffeeScript',
-      code: 'CoffeeScript'
+      Name: 'CoffeeScript',
+      Code: 'CoffeeScript'
     },
     {
-      name: 'Cola',
-      code: 'Cola'
+      Name: 'Cola',
+      Code: 'Cola'
     },
     {
-      name: 'ColdC',
-      code: 'ColdC'
+      Name: 'ColdC',
+      Code: 'ColdC'
     },
     {
-      name: 'ColdFusion',
-      code: 'ColdFusion'
+      Name: 'ColdFusion',
+      Code: 'ColdFusion'
     },
     {
-      name: 'COMAL',
-      code: 'COMAL'
+      Name: 'COMAL',
+      Code: 'COMAL'
     },
     {
-      name: 'Combined Programming Language',
-      code: 'Combined_Programming_Language'
+      Name: 'Combined Programming Language',
+      Code: 'Combined_Programming_Language'
     },
     {
-      name: 'COMIT',
-      code: 'COMIT'
+      Name: 'COMIT',
+      Code: 'COMIT'
     },
     {
-      name: 'Common Intermediate Language',
-      code: 'Common_Intermediate_Language'
+      Name: 'Common Intermediate Language',
+      Code: 'Common_Intermediate_Language'
     },
     {
-      name: 'Common Lisp',
-      code: 'Common_Lisp'
+      Name: 'Common Lisp',
+      Code: 'Common_Lisp'
     },
     {
-      name: 'COMPASS',
-      code: 'COMPASS'
+      Name: 'COMPASS',
+      Code: 'COMPASS'
     },
     {
-      name: 'Component Pascal',
-      code: 'Component_Pascal'
+      Name: 'Component Pascal',
+      Code: 'Component_Pascal'
     },
     {
-      name: 'Constraint Handling Rules',
-      code: 'Constraint_Handling_Rules'
+      Name: 'Constraint Handling Rules',
+      Code: 'Constraint_Handling_Rules'
     },
     {
-      name: 'Converge',
-      code: 'Converge'
+      Name: 'Converge',
+      Code: 'Converge'
     },
     {
-      name: 'Cool',
-      code: 'Cool'
+      Name: 'Cool',
+      Code: 'Cool'
     },
     {
-      name: 'Coq',
-      code: 'Coq'
+      Name: 'Coq',
+      Code: 'Coq'
     },
     {
-      name: 'Coral 66',
-      code: 'Coral_66'
+      Name: 'Coral 66',
+      Code: 'Coral_66'
     },
     {
-      name: 'Corn',
-      code: 'Corn'
+      Name: 'Corn',
+      Code: 'Corn'
     },
     {
-      name: 'CorVision',
-      code: 'CorVision'
+      Name: 'CorVision',
+      Code: 'CorVision'
     },
     {
-      name: 'COWSEL',
-      code: 'COWSEL'
+      Name: 'COWSEL',
+      Code: 'COWSEL'
     },
     {
-      name: 'CPL',
-      code: 'CPL'
+      Name: 'CPL',
+      Code: 'CPL'
     },
     {
-      name: 'csh',
-      code: 'csh'
+      Name: 'csh',
+      Code: 'csh'
     },
     {
-      name: 'CSP',
-      code: 'CSP'
+      Name: 'CSP',
+      Code: 'CSP'
     },
     {
-      name: 'Csound',
-      code: 'Csound'
+      Name: 'Csound',
+      Code: 'Csound'
     },
     {
-      name: 'CUDA',
-      code: 'CUDA'
+      Name: 'CUDA',
+      Code: 'CUDA'
     },
     {
-      name: 'Curl',
-      code: 'Curl'
+      Name: 'Curl',
+      Code: 'Curl'
     },
     {
-      name: 'Curry',
-      code: 'Curry'
+      Name: 'Curry',
+      Code: 'Curry'
     },
     {
-      name: 'Cyclone',
-      code: 'Cyclone'
+      Name: 'Cyclone',
+      Code: 'Cyclone'
     },
     {
-      name: 'Cython',
-      code: 'Cython'
+      Name: 'Cython',
+      Code: 'Cython'
     },
     {
-      name: 'D',
-      code: 'D'
+      Name: 'D',
+      Code: 'D'
     },
     {
-      name: 'DASL',
-      code: 'DASL'
+      Name: 'DASL',
+      Code: 'DASL'
     },
     {
-      name: 'DASL',
-      code: 'DASL'
+      Name: 'DASL',
+      Code: 'DASL'
     },
     {
-      name: 'Dart',
-      code: 'Dart'
+      Name: 'Dart',
+      Code: 'Dart'
     },
     {
-      name: 'DataFlex',
-      code: 'DataFlex'
+      Name: 'DataFlex',
+      Code: 'DataFlex'
     },
     {
-      name: 'Datalog',
-      code: 'Datalog'
+      Name: 'Datalog',
+      Code: 'Datalog'
     },
     {
-      name: 'DATATRIEVE',
-      code: 'DATATRIEVE'
+      Name: 'DATATRIEVE',
+      Code: 'DATATRIEVE'
     },
     {
-      name: 'dBase',
-      code: 'dBase'
+      Name: 'dBase',
+      Code: 'dBase'
     },
     {
-      name: 'dc',
-      code: 'dc'
+      Name: 'dc',
+      Code: 'dc'
     },
     {
-      name: 'DCL',
-      code: 'DCL'
+      Name: 'DCL',
+      Code: 'DCL'
     },
     {
-      name: 'Deesel',
-      code: 'Deesel'
+      Name: 'Deesel',
+      Code: 'Deesel'
     },
     {
-      name: 'Delphi',
-      code: 'Delphi'
+      Name: 'Delphi',
+      Code: 'Delphi'
     },
     {
-      name: 'DinkC',
-      code: 'DinkC'
+      Name: 'DinkC',
+      Code: 'DinkC'
     },
     {
-      name: 'DIBOL',
-      code: 'DIBOL'
+      Name: 'DIBOL',
+      Code: 'DIBOL'
     },
     {
-      name: 'Dog',
-      code: 'Dog'
+      Name: 'Dog',
+      Code: 'Dog'
     },
     {
-      name: 'Draco',
-      code: 'Draco'
+      Name: 'Draco',
+      Code: 'Draco'
     },
     {
-      name: 'DRAKON',
-      code: 'DRAKON'
+      Name: 'DRAKON',
+      Code: 'DRAKON'
     },
     {
-      name: 'Dylan',
-      code: 'Dylan'
+      Name: 'Dylan',
+      Code: 'Dylan'
     },
     {
-      name: 'DYNAMO',
-      code: 'DYNAMO'
+      Name: 'DYNAMO',
+      Code: 'DYNAMO'
     },
     {
-      name: 'E',
-      code: 'E'
+      Name: 'E',
+      Code: 'E'
     },
     {
-      name: 'E#',
-      code: 'Esharp'
+      Name: 'E#',
+      Code: 'Esharp'
     },
     {
-      name: 'Ease',
-      code: 'Ease'
+      Name: 'Ease',
+      Code: 'Ease'
     },
     {
-      name: 'Easy PL/I',
-      code: 'Easy_PL/I'
+      Name: 'Easy PL/I',
+      Code: 'Easy_PL/I'
     },
     {
-      name: 'Easy Programming Language',
-      code: 'Easy_Programming_Language'
+      Name: 'Easy Programming Language',
+      Code: 'Easy_Programming_Language'
     },
     {
-      name: 'EASYTRIEVE PLUS',
-      code: 'EASYTRIEVE_PLUS'
+      Name: 'EASYTRIEVE PLUS',
+      Code: 'EASYTRIEVE_PLUS'
     },
     {
-      name: 'ECMAScript',
-      code: 'ECMAScript'
+      Name: 'ECMAScript',
+      Code: 'ECMAScript'
     },
     {
-      name: 'Edinburgh IMP',
-      code: 'Edinburgh_IMP'
+      Name: 'Edinburgh IMP',
+      Code: 'Edinburgh_IMP'
     },
     {
-      name: 'EGL',
-      code: 'EGL'
+      Name: 'EGL',
+      Code: 'EGL'
     },
     {
-      name: 'Eiffel',
-      code: 'Eiffel'
+      Name: 'Eiffel',
+      Code: 'Eiffel'
     },
     {
-      name: 'ELAN',
-      code: 'ELAN'
+      Name: 'ELAN',
+      Code: 'ELAN'
     },
     {
-      name: 'Elixir',
-      code: 'Elixir'
+      Name: 'Elixir',
+      Code: 'Elixir'
     },
     {
-      name: 'Elm',
-      code: 'Elm'
+      Name: 'Elm',
+      Code: 'Elm'
     },
     {
-      name: 'Emacs Lisp',
-      code: 'Emacs_Lisp'
+      Name: 'Emacs Lisp',
+      Code: 'Emacs_Lisp'
     },
     {
-      name: 'Emerald',
-      code: 'Emerald'
+      Name: 'Emerald',
+      Code: 'Emerald'
     },
     {
-      name: 'Epigram',
-      code: 'Epigram'
+      Name: 'Epigram',
+      Code: 'Epigram'
     },
     {
-      name: 'EPL',
-      code: 'EPL'
+      Name: 'EPL',
+      Code: 'EPL'
     },
     {
-      name: 'Erlang',
-      code: 'Erlang'
+      Name: 'Erlang',
+      Code: 'Erlang'
     },
     {
-      name: 'es',
-      code: 'es'
+      Name: 'es',
+      Code: 'es'
     },
     {
-      name: 'Escapade',
-      code: 'Escapade'
+      Name: 'Escapade',
+      Code: 'Escapade'
     },
     {
-      name: 'Escher',
-      code: 'Escher'
+      Name: 'Escher',
+      Code: 'Escher'
     },
     {
-      name: 'ESPOL',
-      code: 'ESPOL'
+      Name: 'ESPOL',
+      Code: 'ESPOL'
     },
     {
-      name: 'Esterel',
-      code: 'Esterel'
+      Name: 'Esterel',
+      Code: 'Esterel'
     },
     {
-      name: 'Etoys',
-      code: 'Etoys'
+      Name: 'Etoys',
+      Code: 'Etoys'
     },
     {
-      name: 'Euclid',
-      code: 'Euclid'
+      Name: 'Euclid',
+      Code: 'Euclid'
     },
     {
-      name: 'Euler',
-      code: 'Euler'
+      Name: 'Euler',
+      Code: 'Euler'
     },
     {
-      name: 'Euphoria',
-      code: 'Euphoria'
+      Name: 'Euphoria',
+      Code: 'Euphoria'
     },
     {
-      name: 'EusLisp Robot Programming Language',
-      code: 'EusLisp_Robot_Programming_Language'
+      Name: 'EusLisp Robot Programming Language',
+      Code: 'EusLisp_Robot_Programming_Language'
     },
     {
-      name: 'CMS EXEC',
-      code: 'CMS_EXEC'
+      Name: 'CMS EXEC',
+      Code: 'CMS_EXEC'
     },
     {
-      name: 'EXEC 2',
-      code: 'EXEC_2'
+      Name: 'EXEC 2',
+      Code: 'EXEC_2'
     },
     {
-      name: 'Executable UML',
-      code: 'Executable_UML'
+      Name: 'Executable UML',
+      Code: 'Executable_UML'
     },
     {
-      name: 'F',
-      code: 'F'
+      Name: 'F',
+      Code: 'F'
     },
     {
-      name: 'F#',
-      code: 'Fsharp'
+      Name: 'F#',
+      Code: 'Fsharp'
     },
     {
-      name: 'Factor',
-      code: 'Factor'
+      Name: 'Factor',
+      Code: 'Factor'
     },
     {
-      name: 'Falcon',
-      code: 'Falcon'
+      Name: 'Falcon',
+      Code: 'Falcon'
     },
     {
-      name: 'Fancy',
-      code: 'Fancy'
+      Name: 'Fancy',
+      Code: 'Fancy'
     },
     {
-      name: 'Fantom',
-      code: 'Fantom'
+      Name: 'Fantom',
+      Code: 'Fantom'
     },
     {
-      name: 'FAUST',
-      code: 'FAUST'
+      Name: 'FAUST',
+      Code: 'FAUST'
     },
     {
-      name: 'Felix',
-      code: 'Felix'
+      Name: 'Felix',
+      Code: 'Felix'
     },
     {
-      name: 'Ferite',
-      code: 'Ferite'
+      Name: 'Ferite',
+      Code: 'Ferite'
     },
     {
-      name: 'FFP',
-      code: 'FFP'
+      Name: 'FFP',
+      Code: 'FFP'
     },
     {
-      name: 'Fjölnir',
-      code: 'Fjölnir'
+      Name: 'Fjölnir',
+      Code: 'Fjölnir'
     },
     {
-      name: 'FL',
-      code: 'FL'
+      Name: 'FL',
+      Code: 'FL'
     },
     {
-      name: 'Flavors',
-      code: 'Flavors'
+      Name: 'Flavors',
+      Code: 'Flavors'
     },
     {
-      name: 'Flex',
-      code: 'Flex'
+      Name: 'Flex',
+      Code: 'Flex'
     },
     {
-      name: 'FLOW-MATIC',
-      code: 'FLOW-MATIC'
+      Name: 'FLOW-MATIC',
+      Code: 'FLOW-MATIC'
     },
     {
-      name: 'FOCAL',
-      code: 'FOCAL'
+      Name: 'FOCAL',
+      Code: 'FOCAL'
     },
     {
-      name: 'FOCUS',
-      code: 'FOCUS'
+      Name: 'FOCUS',
+      Code: 'FOCUS'
     },
     {
-      name: 'FOIL',
-      code: 'FOIL'
+      Name: 'FOIL',
+      Code: 'FOIL'
     },
     {
-      name: 'FORMAC',
-      code: 'FORMAC'
+      Name: 'FORMAC',
+      Code: 'FORMAC'
     },
     {
-      name: '@Formula',
-      code: '@Formula'
+      Name: '@Formula',
+      Code: '@Formula'
     },
     {
-      name: 'Forth',
-      code: 'Forth'
+      Name: 'Forth',
+      Code: 'Forth'
     },
     {
-      name: 'Fortran',
-      code: 'Fortran'
+      Name: 'Fortran',
+      Code: 'Fortran'
     },
     {
-      name: 'Fortress',
-      code: 'Fortress'
+      Name: 'Fortress',
+      Code: 'Fortress'
     },
     {
-      name: 'FoxBase',
-      code: 'FoxBase'
+      Name: 'FoxBase',
+      Code: 'FoxBase'
     },
     {
-      name: 'FoxPro',
-      code: 'FoxPro'
+      Name: 'FoxPro',
+      Code: 'FoxPro'
     },
     {
-      name: 'FP',
-      code: 'FP'
+      Name: 'FP',
+      Code: 'FP'
     },
     {
-      name: 'FPr',
-      code: 'FPr'
+      Name: 'FPr',
+      Code: 'FPr'
     },
     {
-      name: 'Franz Lisp',
-      code: 'Franz_Lisp'
+      Name: 'Franz Lisp',
+      Code: 'Franz_Lisp'
     },
     {
-      name: 'Frege',
-      code: 'Frege'
+      Name: 'Frege',
+      Code: 'Frege'
     },
     {
-      name: 'F-Script',
-      code: 'F-Script'
+      Name: 'F-Script',
+      Code: 'F-Script'
     },
     {
-      name: 'FSProg',
-      code: 'FSProg'
+      Name: 'FSProg',
+      Code: 'FSProg'
     },
     {
-      name: 'G',
-      code: 'G'
+      Name: 'G',
+      Code: 'G'
     },
     {
-      name: 'Google Apps Script',
-      code: 'Google_Apps_Script'
+      Name: 'Google Apps Script',
+      Code: 'Google_Apps_Script'
     },
     {
-      name: 'Game Maker Language',
-      code: 'Game_Maker_Language'
+      Name: 'Game Maker Language',
+      Code: 'Game_Maker_Language'
     },
     {
-      name: 'GameMonkey Script',
-      code: 'GameMonkey_Script'
+      Name: 'GameMonkey Script',
+      Code: 'GameMonkey_Script'
     },
     {
-      name: 'GAMS',
-      code: 'GAMS'
+      Name: 'GAMS',
+      Code: 'GAMS'
     },
     {
-      name: 'GAP',
-      code: 'GAP'
+      Name: 'GAP',
+      Code: 'GAP'
     },
     {
-      name: 'G-code',
-      code: 'G-code'
+      Name: 'G-Code',
+      Code: 'G-Code'
     },
     {
-      name: 'Genie',
-      code: 'Genie'
+      Name: 'Genie',
+      Code: 'Genie'
     },
     {
-      name: 'GDL',
-      code: 'GDL'
+      Name: 'GDL',
+      Code: 'GDL'
     },
     {
-      name: 'Gibiane',
-      code: 'Gibiane'
+      Name: 'Gibiane',
+      Code: 'Gibiane'
     },
     {
-      name: 'GJ',
-      code: 'GJ'
+      Name: 'GJ',
+      Code: 'GJ'
     },
     {
-      name: 'GEORGE',
-      code: 'GEORGE'
+      Name: 'GEORGE',
+      Code: 'GEORGE'
     },
     {
-      name: 'GLSL',
-      code: 'GLSL'
+      Name: 'GLSL',
+      Code: 'GLSL'
     },
     {
-      name: 'GNU E',
-      code: 'GNU_E'
+      Name: 'GNU E',
+      Code: 'GNU_E'
     },
     {
-      name: 'GM',
-      code: 'GM'
+      Name: 'GM',
+      Code: 'GM'
     },
     {
-      name: 'Go',
-      code: 'Go'
+      Name: 'Go',
+      Code: 'Go'
     },
     {
-      name: 'Go!',
-      code: 'Go!'
+      Name: 'Go!',
+      Code: 'Go!'
     },
     {
-      name: 'GOAL',
-      code: 'GOAL'
+      Name: 'GOAL',
+      Code: 'GOAL'
     },
     {
-      name: 'Gödel',
-      code: 'Gödel'
+      Name: 'Gödel',
+      Code: 'Gödel'
     },
     {
-      name: 'Godiva',
-      code: 'Godiva'
+      Name: 'Godiva',
+      Code: 'Godiva'
     },
     {
-      name: 'GOM (Good Old Mad)',
-      code: 'GOM_(Good_Old_Mad)'
+      Name: 'GOM (Good Old Mad)',
+      Code: 'GOM_(Good_Old_Mad)'
     },
     {
-      name: 'Goo',
-      code: 'Goo'
+      Name: 'Goo',
+      Code: 'Goo'
     },
     {
-      name: 'Gosu',
-      code: 'Gosu'
+      Name: 'Gosu',
+      Code: 'Gosu'
     },
     {
-      name: 'GOTRAN',
-      code: 'GOTRAN'
+      Name: 'GOTRAN',
+      Code: 'GOTRAN'
     },
     {
-      name: 'GPSS',
-      code: 'GPSS'
+      Name: 'GPSS',
+      Code: 'GPSS'
     },
     {
-      name: 'GraphTalk',
-      code: 'GraphTalk'
+      Name: 'GraphTalk',
+      Code: 'GraphTalk'
     },
     {
-      name: 'GRASS',
-      code: 'GRASS'
+      Name: 'GRASS',
+      Code: 'GRASS'
     },
     {
-      name: 'Groovy',
-      code: 'Groovy'
+      Name: 'Groovy',
+      Code: 'Groovy'
     },
     {
-      name: 'Hack (programming language)',
-      code: 'Hack_(programming_language)'
+      Name: 'Hack (programming language)',
+      Code: 'Hack_(programming_language)'
     },
     {
-      name: 'HAL/S',
-      code: 'HAL/S'
+      Name: 'HAL/S',
+      Code: 'HAL/S'
     },
     {
-      name: 'Hamilton C shell',
-      code: 'Hamilton_C_shell'
+      Name: 'Hamilton C shell',
+      Code: 'Hamilton_C_shell'
     },
     {
-      name: 'Harbour',
-      code: 'Harbour'
+      Name: 'Harbour',
+      Code: 'Harbour'
     },
     {
-      name: 'Hartmann pipelines',
-      code: 'Hartmann_pipelines'
+      Name: 'Hartmann pipelines',
+      Code: 'Hartmann_pipelines'
     },
     {
-      name: 'Haskell',
-      code: 'Haskell'
+      Name: 'Haskell',
+      Code: 'Haskell'
     },
     {
-      name: 'Haxe',
-      code: 'Haxe'
+      Name: 'Haxe',
+      Code: 'Haxe'
     },
     {
-      name: 'High Level Assembly',
-      code: 'High_Level_Assembly'
+      Name: 'High Level Assembly',
+      Code: 'High_Level_Assembly'
     },
     {
-      name: 'HLSL',
-      code: 'HLSL'
+      Name: 'HLSL',
+      Code: 'HLSL'
     },
     {
-      name: 'Hop',
-      code: 'Hop'
+      Name: 'Hop',
+      Code: 'Hop'
     },
     {
-      name: 'Hope',
-      code: 'Hope'
+      Name: 'Hope',
+      Code: 'Hope'
     },
     {
-      name: 'Hugo',
-      code: 'Hugo'
+      Name: 'Hugo',
+      Code: 'Hugo'
     },
     {
-      name: 'Hume',
-      code: 'Hume'
+      Name: 'Hume',
+      Code: 'Hume'
     },
     {
-      name: 'HyperTalk',
-      code: 'HyperTalk'
+      Name: 'HyperTalk',
+      Code: 'HyperTalk'
     },
     {
-      name: 'IBM Basic assembly language',
-      code: 'IBM_Basic_assembly_language'
+      Name: 'IBM Basic assembly language',
+      Code: 'IBM_Basic_assembly_language'
     },
     {
-      name: 'IBM HAScript',
-      code: 'IBM_HAScript'
+      Name: 'IBM HAScript',
+      Code: 'IBM_HAScript'
     },
     {
-      name: 'IBM Informix-4GL',
-      code: 'IBM_Informix-4GL'
+      Name: 'IBM Informix-4GL',
+      Code: 'IBM_Informix-4GL'
     },
     {
-      name: 'IBM RPG',
-      code: 'IBM_RPG'
+      Name: 'IBM RPG',
+      Code: 'IBM_RPG'
     },
     {
-      name: 'ICI',
-      code: 'ICI'
+      Name: 'ICI',
+      Code: 'ICI'
     },
     {
-      name: 'Icon',
-      code: 'Icon'
+      Name: 'Icon',
+      Code: 'Icon'
     },
     {
-      name: 'Id',
-      code: 'Id'
+      Name: 'Id',
+      Code: 'Id'
     },
     {
-      name: 'IDL',
-      code: 'IDL'
+      Name: 'IDL',
+      Code: 'IDL'
     },
     {
-      name: 'Idris',
-      code: 'Idris'
+      Name: 'Idris',
+      Code: 'Idris'
     },
     {
-      name: 'IMP',
-      code: 'IMP'
+      Name: 'IMP',
+      Code: 'IMP'
     },
     {
-      name: 'Inform',
-      code: 'Inform'
+      Name: 'Inform',
+      Code: 'Inform'
     },
     {
-      name: 'Io',
-      code: 'Io'
+      Name: 'Io',
+      Code: 'Io'
     },
     {
-      name: 'Ioke',
-      code: 'Ioke'
+      Name: 'Ioke',
+      Code: 'Ioke'
     },
     {
-      name: 'IPL',
-      code: 'IPL'
+      Name: 'IPL',
+      Code: 'IPL'
     },
     {
-      name: 'IPTSCRAE',
-      code: 'IPTSCRAE'
+      Name: 'IPTSCRAE',
+      Code: 'IPTSCRAE'
     },
     {
-      name: 'ISLISP',
-      code: 'ISLISP'
+      Name: 'ISLISP',
+      Code: 'ISLISP'
     },
     {
-      name: 'ISPF',
-      code: 'ISPF'
+      Name: 'ISPF',
+      Code: 'ISPF'
     },
     {
-      name: 'ISWIM',
-      code: 'ISWIM'
+      Name: 'ISWIM',
+      Code: 'ISWIM'
     },
     {
-      name: 'J',
-      code: 'J'
+      Name: 'J',
+      Code: 'J'
     },
     {
-      name: 'J#',
-      code: 'Jsharp'
+      Name: 'J#',
+      Code: 'Jsharp'
     },
     {
-      name: 'J++',
-      code: 'J++'
+      Name: 'J++',
+      Code: 'J++'
     },
     {
-      name: 'JADE',
-      code: 'JADE'
+      Name: 'JADE',
+      Code: 'JADE'
     },
     {
-      name: 'Jako',
-      code: 'Jako'
+      Name: 'Jako',
+      Code: 'Jako'
     },
     {
-      name: 'JAL',
-      code: 'JAL'
+      Name: 'JAL',
+      Code: 'JAL'
     },
     {
-      name: 'Janus',
-      code: 'Janus'
+      Name: 'Janus',
+      Code: 'Janus'
     },
     {
-      name: 'JASS',
-      code: 'JASS'
+      Name: 'JASS',
+      Code: 'JASS'
     },
     {
-      name: 'Java',
-      code: 'Java'
+      Name: 'Java',
+      Code: 'Java'
     },
     {
-      name: 'JavaScript',
-      code: 'JavaScript'
+      Name: 'JavaScript',
+      Code: 'JavaScript'
     },
     {
-      name: 'JCL',
-      code: 'JCL'
+      Name: 'JCL',
+      Code: 'JCL'
     },
     {
-      name: 'JEAN',
-      code: 'JEAN'
+      Name: 'JEAN',
+      Code: 'JEAN'
     },
     {
-      name: 'Join Java',
-      code: 'Join_Java'
+      Name: 'Join Java',
+      Code: 'Join_Java'
     },
     {
-      name: 'JOSS',
-      code: 'JOSS'
+      Name: 'JOSS',
+      Code: 'JOSS'
     },
     {
-      name: 'Joule',
-      code: 'Joule'
+      Name: 'Joule',
+      Code: 'Joule'
     },
     {
-      name: 'JOVIAL',
-      code: 'JOVIAL'
+      Name: 'JOVIAL',
+      Code: 'JOVIAL'
     },
     {
-      name: 'Joy',
-      code: 'Joy'
+      Name: 'Joy',
+      Code: 'Joy'
     },
     {
-      name: 'JScript',
-      code: 'JScript'
+      Name: 'JScript',
+      Code: 'JScript'
     },
     {
-      name: 'JScript .NET',
-      code: 'JScript_dot_NET'
+      Name: 'JScript .NET',
+      Code: 'JScript_dot_NET'
     },
     {
-      name: 'JavaFX Script',
-      code: 'JavaFX_Script'
+      Name: 'JavaFX Script',
+      Code: 'JavaFX_Script'
     },
     {
-      name: 'Julia',
-      code: 'Julia'
+      Name: 'Julia',
+      Code: 'Julia'
     },
     {
-      name: 'Jython',
-      code: 'Jython'
+      Name: 'Jython',
+      Code: 'Jython'
     },
     {
-      name: 'K',
-      code: 'K'
+      Name: 'K',
+      Code: 'K'
     },
     {
-      name: 'Kaleidoscope',
-      code: 'Kaleidoscope'
+      Name: 'Kaleidoscope',
+      Code: 'Kaleidoscope'
     },
     {
-      name: 'Karel',
-      code: 'Karel'
+      Name: 'Karel',
+      Code: 'Karel'
     },
     {
-      name: 'Karel++',
-      code: 'Karel++'
+      Name: 'Karel++',
+      Code: 'Karel++'
     },
     {
-      name: 'KEE',
-      code: 'KEE'
+      Name: 'KEE',
+      Code: 'KEE'
     },
     {
-      name: 'Kixtart',
-      code: 'Kixtart'
+      Name: 'Kixtart',
+      Code: 'Kixtart'
     },
     {
-      name: 'KIF',
-      code: 'KIF'
+      Name: 'KIF',
+      Code: 'KIF'
     },
     {
-      name: 'Kojo',
-      code: 'Kojo'
+      Name: 'Kojo',
+      Code: 'Kojo'
     },
     {
-      name: 'Kotlin',
-      code: 'Kotlin'
+      Name: 'Kotlin',
+      Code: 'Kotlin'
     },
     {
-      name: 'KRC',
-      code: 'KRC'
+      Name: 'KRC',
+      Code: 'KRC'
     },
     {
-      name: 'KRL',
-      code: 'KRL'
+      Name: 'KRL',
+      Code: 'KRL'
     },
     {
-      name: 'KUKA',
-      code: 'KUKA'
+      Name: 'KUKA',
+      Code: 'KUKA'
     },
     {
-      name: 'KRYPTON',
-      code: 'KRYPTON'
+      Name: 'KRYPTON',
+      Code: 'KRYPTON'
     },
     {
-      name: 'ksh',
-      code: 'ksh'
+      Name: 'ksh',
+      Code: 'ksh'
     },
     {
-      name: 'L',
-      code: 'L'
+      Name: 'L',
+      Code: 'L'
     },
     {
-      name: 'L# .NET',
-      code: 'Lsharp_dot_NET'
+      Name: 'L# .NET',
+      Code: 'Lsharp_dot_NET'
     },
     {
-      name: 'LabVIEW',
-      code: 'LabVIEW'
+      Name: 'LabVIEW',
+      Code: 'LabVIEW'
     },
     {
-      name: 'Ladder',
-      code: 'Ladder'
+      Name: 'Ladder',
+      Code: 'Ladder'
     },
     {
-      name: 'Lagoona',
-      code: 'Lagoona'
+      Name: 'Lagoona',
+      Code: 'Lagoona'
     },
     {
-      name: 'LANSA',
-      code: 'LANSA'
+      Name: 'LANSA',
+      Code: 'LANSA'
     },
     {
-      name: 'Lasso',
-      code: 'Lasso'
+      Name: 'Lasso',
+      Code: 'Lasso'
     },
     {
-      name: 'LaTeX',
-      code: 'LaTeX'
+      Name: 'LaTeX',
+      Code: 'LaTeX'
     },
     {
-      name: 'Lava',
-      code: 'Lava'
+      Name: 'Lava',
+      Code: 'Lava'
     },
     {
-      name: 'LC-3',
-      code: 'LC-3'
+      Name: 'LC-3',
+      Code: 'LC-3'
     },
     {
-      name: 'Leda',
-      code: 'Leda'
+      Name: 'Leda',
+      Code: 'Leda'
     },
     {
-      name: 'Legoscript',
-      code: 'Legoscript'
+      Name: 'Legoscript',
+      Code: 'Legoscript'
     },
     {
-      name: 'LIL',
-      code: 'LIL'
+      Name: 'LIL',
+      Code: 'LIL'
     },
     {
-      name: 'LilyPond',
-      code: 'LilyPond'
+      Name: 'LilyPond',
+      Code: 'LilyPond'
     },
     {
-      name: 'Limbo',
-      code: 'Limbo'
+      Name: 'Limbo',
+      Code: 'Limbo'
     },
     {
-      name: 'Limnor',
-      code: 'Limnor'
+      Name: 'Limnor',
+      Code: 'Limnor'
     },
     {
-      name: 'LINC',
-      code: 'LINC'
+      Name: 'LINC',
+      Code: 'LINC'
     },
     {
-      name: 'Lingo',
-      code: 'Lingo'
+      Name: 'Lingo',
+      Code: 'Lingo'
     },
     {
-      name: 'Linoleum',
-      code: 'Linoleum'
+      Name: 'Linoleum',
+      Code: 'Linoleum'
     },
     {
-      name: 'LIS',
-      code: 'LIS'
+      Name: 'LIS',
+      Code: 'LIS'
     },
     {
-      name: 'LISA',
-      code: 'LISA'
+      Name: 'LISA',
+      Code: 'LISA'
     },
     {
-      name: 'Lisaac',
-      code: 'Lisaac'
+      Name: 'Lisaac',
+      Code: 'Lisaac'
     },
     {
-      name: 'Lisp',
-      code: 'Lisp'
+      Name: 'Lisp',
+      Code: 'Lisp'
     },
     {
-      name: 'Lite-C',
-      code: 'Lite-C'
+      Name: 'Lite-C',
+      Code: 'Lite-C'
     },
     {
-      name: 'Lithe',
-      code: 'Lithe'
+      Name: 'Lithe',
+      Code: 'Lithe'
     },
     {
-      name: 'Little b',
-      code: 'Little_b'
+      Name: 'Little b',
+      Code: 'Little_b'
     },
     {
-      name: 'Logo',
-      code: 'Logo'
+      Name: 'Logo',
+      Code: 'Logo'
     },
     {
-      name: 'Logtalk',
-      code: 'Logtalk'
+      Name: 'Logtalk',
+      Code: 'Logtalk'
     },
     {
-      name: 'LPC',
-      code: 'LPC'
+      Name: 'LPC',
+      Code: 'LPC'
     },
     {
-      name: 'LSE',
-      code: 'LSE'
+      Name: 'LSE',
+      Code: 'LSE'
     },
     {
-      name: 'LSL',
-      code: 'LSL'
+      Name: 'LSL',
+      Code: 'LSL'
     },
     {
-      name: 'LiveCode',
-      code: 'LiveCode'
+      Name: 'LiveCode',
+      Code: 'LiveCode'
     },
     {
-      name: 'LiveScript',
-      code: 'LiveScript'
+      Name: 'LiveScript',
+      Code: 'LiveScript'
     },
     {
-      name: 'Lua',
-      code: 'Lua'
+      Name: 'Lua',
+      Code: 'Lua'
     },
     {
-      name: 'Lucid',
-      code: 'Lucid'
+      Name: 'Lucid',
+      Code: 'Lucid'
     },
     {
-      name: 'Lustre',
-      code: 'Lustre'
+      Name: 'Lustre',
+      Code: 'Lustre'
     },
     {
-      name: 'LYaPAS',
-      code: 'LYaPAS'
+      Name: 'LYaPAS',
+      Code: 'LYaPAS'
     },
     {
-      name: 'Lynx',
-      code: 'Lynx'
+      Name: 'Lynx',
+      Code: 'Lynx'
     },
     {
-      name: 'M2001',
-      code: 'M2001'
+      Name: 'M2001',
+      Code: 'M2001'
     },
     {
-      name: 'M4',
-      code: 'M4'
+      Name: 'M4',
+      Code: 'M4'
     },
     {
-      name: 'Machine code',
-      code: 'Machine_code'
+      Name: 'Machine Code',
+      Code: 'Machine_Code'
     },
     {
-      name: 'MAD',
-      code: 'MAD'
+      Name: 'MAD',
+      Code: 'MAD'
     },
     {
-      name: 'MAD/I',
-      code: 'MAD/I'
+      Name: 'MAD/I',
+      Code: 'MAD/I'
     },
     {
-      name: 'Magik',
-      code: 'Magik'
+      Name: 'Magik',
+      Code: 'Magik'
     },
     {
-      name: 'Magma',
-      code: 'Magma'
+      Name: 'Magma',
+      Code: 'Magma'
     },
     {
-      name: 'make',
-      code: 'make'
+      Name: 'make',
+      Code: 'make'
     },
     {
-      name: 'Maple',
-      code: 'Maple'
+      Name: 'Maple',
+      Code: 'Maple'
     },
     {
-      name: 'MAPPER',
-      code: 'MAPPER'
+      Name: 'MAPPER',
+      Code: 'MAPPER'
     },
     {
-      name: 'MARK-IV',
-      code: 'MARK-IV'
+      Name: 'MARK-IV',
+      Code: 'MARK-IV'
     },
     {
-      name: 'Mary',
-      code: 'Mary'
+      Name: 'Mary',
+      Code: 'Mary'
     },
     {
-      name: 'MASM Microsoft Assembly x86',
-      code: 'MASM_Microsoft_Assembly_x86'
+      Name: 'MASM Microsoft Assembly x86',
+      Code: 'MASM_Microsoft_Assembly_x86'
     },
     {
-      name: 'Mathematica',
-      code: 'Mathematica'
+      Name: 'Mathematica',
+      Code: 'Mathematica'
     },
     {
-      name: 'MATLAB',
-      code: 'MATLAB'
+      Name: 'MATLAB',
+      Code: 'MATLAB'
     },
     {
-      name: 'Maxima',
-      code: 'Maxima'
+      Name: 'Maxima',
+      Code: 'Maxima'
     },
     {
-      name: 'Macsyma',
-      code: 'Macsyma'
+      Name: 'Macsyma',
+      Code: 'Macsyma'
     },
     {
-      name: 'Max',
-      code: 'Max'
+      Name: 'Max',
+      Code: 'Max'
     },
     {
-      name: 'MaxScript',
-      code: 'MaxScript'
+      Name: 'MaxScript',
+      Code: 'MaxScript'
     },
     {
-      name: 'Maya (MEL)',
-      code: 'Maya_(MEL)'
+      Name: 'Maya (MEL)',
+      Code: 'Maya_(MEL)'
     },
     {
-      name: 'MDL',
-      code: 'MDL'
+      Name: 'MDL',
+      Code: 'MDL'
     },
     {
-      name: 'Mercury',
-      code: 'Mercury'
+      Name: 'Mercury',
+      Code: 'Mercury'
     },
     {
-      name: 'Mesa',
-      code: 'Mesa'
+      Name: 'Mesa',
+      Code: 'Mesa'
     },
     {
-      name: 'Metacard',
-      code: 'Metacard'
+      Name: 'Metacard',
+      Code: 'Metacard'
     },
     {
-      name: 'Metafont',
-      code: 'Metafont'
+      Name: 'Metafont',
+      Code: 'Metafont'
     },
     {
-      name: 'MetaL',
-      code: 'MetaL'
+      Name: 'MetaL',
+      Code: 'MetaL'
     },
     {
-      name: 'Microcode',
-      code: 'Microcode'
+      Name: 'MicroCode',
+      Code: 'MicroCode'
     },
     {
-      name: 'MicroScript',
-      code: 'MicroScript'
+      Name: 'MicroScript',
+      Code: 'MicroScript'
     },
     {
-      name: 'MIIS',
-      code: 'MIIS'
+      Name: 'MIIS',
+      Code: 'MIIS'
     },
     {
-      name: 'MillScript',
-      code: 'MillScript'
+      Name: 'MillScript',
+      Code: 'MillScript'
     },
     {
-      name: 'MIMIC',
-      code: 'MIMIC'
+      Name: 'MIMIC',
+      Code: 'MIMIC'
     },
     {
-      name: 'Mirah',
-      code: 'Mirah'
+      Name: 'Mirah',
+      Code: 'Mirah'
     },
     {
-      name: 'Miranda',
-      code: 'Miranda'
+      Name: 'Miranda',
+      Code: 'Miranda'
     },
     {
-      name: 'MIVA Script',
-      code: 'MIVA_Script'
+      Name: 'MIVA Script',
+      Code: 'MIVA_Script'
     },
     {
-      name: 'ML',
-      code: 'ML'
+      Name: 'ML',
+      Code: 'ML'
     },
     {
-      name: 'Moby',
-      code: 'Moby'
+      Name: 'Moby',
+      Code: 'Moby'
     },
     {
-      name: 'Model 204',
-      code: 'Model_204'
+      Name: 'Model 204',
+      Code: 'Model_204'
     },
     {
-      name: 'Modelica',
-      code: 'Modelica'
+      Name: 'Modelica',
+      Code: 'Modelica'
     },
     {
-      name: 'Modula',
-      code: 'Modula'
+      Name: 'Modula',
+      Code: 'Modula'
     },
     {
-      name: 'Modula-2',
-      code: 'Modula-2'
+      Name: 'Modula-2',
+      Code: 'Modula-2'
     },
     {
-      name: 'Modula-3',
-      code: 'Modula-3'
+      Name: 'Modula-3',
+      Code: 'Modula-3'
     },
     {
-      name: 'Mohol',
-      code: 'Mohol'
+      Name: 'Mohol',
+      Code: 'Mohol'
     },
     {
-      name: 'MOO',
-      code: 'MOO'
+      Name: 'MOO',
+      Code: 'MOO'
     },
     {
-      name: 'Mortran',
-      code: 'Mortran'
+      Name: 'Mortran',
+      Code: 'Mortran'
     },
     {
-      name: 'Mouse',
-      code: 'Mouse'
+      Name: 'Mouse',
+      Code: 'Mouse'
     },
     {
-      name: 'MPD',
-      code: 'MPD'
+      Name: 'MPD',
+      Code: 'MPD'
     },
     {
-      name: 'CIL',
-      code: 'CIL'
+      Name: 'CIL',
+      Code: 'CIL'
     },
     {
-      name: 'MSL',
-      code: 'MSL'
+      Name: 'MSL',
+      Code: 'MSL'
     },
     {
-      name: 'MUMPS',
-      code: 'MUMPS'
+      Name: 'MUMPS',
+      Code: 'MUMPS'
     },
     {
-      name: 'NASM',
-      code: 'NASM'
+      Name: 'NASM',
+      Code: 'NASM'
     },
     {
-      name: 'NATURAL',
-      code: 'NATURAL'
+      Name: 'NATURAL',
+      Code: 'NATURAL'
     },
     {
-      name: 'Napier88',
-      code: 'Napier88'
+      Name: 'Napier88',
+      Code: 'Napier88'
     },
     {
-      name: 'Neko',
-      code: 'Neko'
+      Name: 'Neko',
+      Code: 'Neko'
     },
     {
-      name: 'Nemerle',
-      code: 'Nemerle'
+      Name: 'Nemerle',
+      Code: 'Nemerle'
     },
     {
-      name: 'nesC',
-      code: 'nesC'
+      Name: 'nesC',
+      Code: 'nesC'
     },
     {
-      name: 'NESL',
-      code: 'NESL'
+      Name: 'NESL',
+      Code: 'NESL'
     },
     {
-      name: 'Net.Data',
-      code: 'Net_dot_Data'
+      Name: 'Net.Data',
+      Code: 'Net_dot_Data'
     },
     {
-      name: 'NetLogo',
-      code: 'NetLogo'
+      Name: 'NetLogo',
+      Code: 'NetLogo'
     },
     {
-      name: 'NetRexx',
-      code: 'NetRexx'
+      Name: 'NetRexx',
+      Code: 'NetRexx'
     },
     {
-      name: 'NewLISP',
-      code: 'NewLISP'
+      Name: 'NewLISP',
+      Code: 'NewLISP'
     },
     {
-      name: 'NEWP',
-      code: 'NEWP'
+      Name: 'NEWP',
+      Code: 'NEWP'
     },
     {
-      name: 'Newspeak',
-      code: 'Newspeak'
+      Name: 'Newspeak',
+      Code: 'Newspeak'
     },
     {
-      name: 'NewtonScript',
-      code: 'NewtonScript'
+      Name: 'NewtonScript',
+      Code: 'NewtonScript'
     },
     {
-      name: 'NGL',
-      code: 'NGL'
+      Name: 'NGL',
+      Code: 'NGL'
     },
     {
-      name: 'Nial',
-      code: 'Nial'
+      Name: 'Nial',
+      Code: 'Nial'
     },
     {
-      name: 'Nice',
-      code: 'Nice'
+      Name: 'Nice',
+      Code: 'Nice'
     },
     {
-      name: 'Nickle',
-      code: 'Nickle'
+      Name: 'Nickle',
+      Code: 'Nickle'
     },
     {
-      name: 'Nim',
-      code: 'Nim'
+      Name: 'Nim',
+      Code: 'Nim'
     },
     {
-      name: 'NPL',
-      code: 'NPL'
+      Name: 'NPL',
+      Code: 'NPL'
     },
     {
-      name: 'Not eXactly C',
-      code: 'Not_eXactly_C'
+      Name: 'Not eXactly C',
+      Code: 'Not_eXactly_C'
     },
     {
-      name: 'Not Quite C',
-      code: 'Not_Quite_C'
+      Name: 'Not Quite C',
+      Code: 'Not_Quite_C'
     },
     {
-      name: 'NSIS',
-      code: 'NSIS'
+      Name: 'NSIS',
+      Code: 'NSIS'
     },
     {
-      name: 'Nu',
-      code: 'Nu'
+      Name: 'Nu',
+      Code: 'Nu'
     },
     {
-      name: 'NWScript',
-      code: 'NWScript'
+      Name: 'NWScript',
+      Code: 'NWScript'
     },
     {
-      name: 'NXT-G',
-      code: 'NXT-G'
+      Name: 'NXT-G',
+      Code: 'NXT-G'
     },
     {
-      name: 'o:XML',
-      code: 'o:XML'
+      Name: 'o:XML',
+      Code: 'o:XML'
     },
     {
-      name: 'Oak',
-      code: 'Oak'
+      Name: 'Oak',
+      Code: 'Oak'
     },
     {
-      name: 'Oberon',
-      code: 'Oberon'
+      Name: 'Oberon',
+      Code: 'Oberon'
     },
     {
-      name: 'Obix',
-      code: 'Obix'
+      Name: 'Obix',
+      Code: 'Obix'
     },
     {
-      name: 'OBJ2',
-      code: 'OBJ2'
+      Name: 'OBJ2',
+      Code: 'OBJ2'
     },
     {
-      name: 'Object Lisp',
-      code: 'Object_Lisp'
+      Name: 'Object Lisp',
+      Code: 'Object_Lisp'
     },
     {
-      name: 'ObjectLOGO',
-      code: 'ObjectLOGO'
+      Name: 'ObjectLOGO',
+      Code: 'ObjectLOGO'
     },
     {
-      name: 'Object REXX',
-      code: 'Object_REXX'
+      Name: 'Object REXX',
+      Code: 'Object_REXX'
     },
     {
-      name: 'Object Pascal',
-      code: 'Object_Pascal'
+      Name: 'Object Pascal',
+      Code: 'Object_Pascal'
     },
     {
-      name: 'Objective-C',
-      code: 'Objective-C'
+      Name: 'Objective-C',
+      Code: 'Objective-C'
     },
     {
-      name: 'Objective-J',
-      code: 'Objective-J'
+      Name: 'Objective-J',
+      Code: 'Objective-J'
     },
     {
-      name: 'Obliq',
-      code: 'Obliq'
+      Name: 'Obliq',
+      Code: 'Obliq'
     },
     {
-      name: 'Obol',
-      code: 'Obol'
+      Name: 'Obol',
+      Code: 'Obol'
     },
     {
-      name: 'OCaml',
-      code: 'OCaml'
+      Name: 'OCaml',
+      Code: 'OCaml'
     },
     {
-      name: 'occam',
-      code: 'occam'
+      Name: 'occam',
+      Code: 'occam'
     },
     {
-      name: 'occam-π',
-      code: 'occam-π'
+      Name: 'occam-π',
+      Code: 'occam-π'
     },
     {
-      name: 'Octave',
-      code: 'Octave'
+      Name: 'Octave',
+      Code: 'Octave'
     },
     {
-      name: 'OmniMark',
-      code: 'OmniMark'
+      Name: 'OmniMark',
+      Code: 'OmniMark'
     },
     {
-      name: 'Onyx',
-      code: 'Onyx'
+      Name: 'Onyx',
+      Code: 'Onyx'
     },
     {
-      name: 'Opa',
-      code: 'Opa'
+      Name: 'Opa',
+      Code: 'Opa'
     },
     {
-      name: 'Opal',
-      code: 'Opal'
+      Name: 'Opal',
+      Code: 'Opal'
     },
     {
-      name: 'OpenCL',
-      code: 'OpenCL'
+      Name: 'OpenCL',
+      Code: 'OpenCL'
     },
     {
-      name: 'OpenEdge ABL',
-      code: 'OpenEdge_ABL'
+      Name: 'OpenEdge ABL',
+      Code: 'OpenEdge_ABL'
     },
     {
-      name: 'OPL',
-      code: 'OPL'
+      Name: 'OPL',
+      Code: 'OPL'
     },
     {
-      name: 'OPS5',
-      code: 'OPS5'
+      Name: 'OPS5',
+      Code: 'OPS5'
     },
     {
-      name: 'OptimJ',
-      code: 'OptimJ'
+      Name: 'OptimJ',
+      Code: 'OptimJ'
     },
     {
-      name: 'Orc',
-      code: 'Orc'
+      Name: 'Orc',
+      Code: 'Orc'
     },
     {
-      name: 'ORCA/Modula-2',
-      code: 'ORCA/Modula-2'
+      Name: 'ORCA/Modula-2',
+      Code: 'ORCA/Modula-2'
     },
     {
-      name: 'Oriel',
-      code: 'Oriel'
+      Name: 'Oriel',
+      Code: 'Oriel'
     },
     {
-      name: 'Orwell',
-      code: 'Orwell'
+      Name: 'Orwell',
+      Code: 'Orwell'
     },
     {
-      name: 'Oxygene',
-      code: 'Oxygene'
+      Name: 'Oxygene',
+      Code: 'Oxygene'
     },
     {
-      name: 'Oz',
-      code: 'Oz'
+      Name: 'Oz',
+      Code: 'Oz'
     },
     {
-      name: 'P#',
-      code: 'Psharp'
+      Name: 'P#',
+      Code: 'Psharp'
     },
     {
-      name: 'ParaSail (programming language)',
-      code: 'ParaSail_(programming_language)'
+      Name: 'ParaSail (programming language)',
+      Code: 'ParaSail_(programming_language)'
     },
     {
-      name: 'PARI/GP',
-      code: 'PARI/GP'
+      Name: 'PARI/GP',
+      Code: 'PARI/GP'
     },
     {
-      name: 'Pascal',
-      code: 'Pascal'
+      Name: 'Pascal',
+      Code: 'Pascal'
     },
     {
-      name: 'Pawn',
-      code: 'Pawn'
+      Name: 'Pawn',
+      Code: 'Pawn'
     },
     {
-      name: 'PCASTL',
-      code: 'PCASTL'
+      Name: 'PCASTL',
+      Code: 'PCASTL'
     },
     {
-      name: 'PCF',
-      code: 'PCF'
+      Name: 'PCF',
+      Code: 'PCF'
     },
     {
-      name: 'PEARL',
-      code: 'PEARL'
+      Name: 'PEARL',
+      Code: 'PEARL'
     },
     {
-      name: 'PeopleCode',
-      code: 'PeopleCode'
+      Name: 'PeopleCode',
+      Code: 'PeopleCode'
     },
     {
-      name: 'Perl',
-      code: 'Perl'
+      Name: 'Perl',
+      Code: 'Perl'
     },
     {
-      name: 'PDL',
-      code: 'PDL'
+      Name: 'PDL',
+      Code: 'PDL'
     },
     {
-      name: 'PHP',
-      code: 'PHP'
+      Name: 'PHP',
+      Code: 'PHP'
     },
     {
-      name: 'Phrogram',
-      code: 'Phrogram'
+      Name: 'Phrogram',
+      Code: 'Phrogram'
     },
     {
-      name: 'Pico',
-      code: 'Pico'
+      Name: 'Pico',
+      Code: 'Pico'
     },
     {
-      name: 'Picolisp',
-      code: 'Picolisp'
+      Name: 'Picolisp',
+      Code: 'Picolisp'
     },
     {
-      name: 'Pict',
-      code: 'Pict'
+      Name: 'Pict',
+      Code: 'Pict'
     },
     {
-      name: 'Pike',
-      code: 'Pike'
+      Name: 'Pike',
+      Code: 'Pike'
     },
     {
-      name: 'PIKT',
-      code: 'PIKT'
+      Name: 'PIKT',
+      Code: 'PIKT'
     },
     {
-      name: 'PILOT',
-      code: 'PILOT'
+      Name: 'PILOT',
+      Code: 'PILOT'
     },
     {
-      name: 'Pipelines',
-      code: 'Pipelines'
+      Name: 'Pipelines',
+      Code: 'Pipelines'
     },
     {
-      name: 'Pizza',
-      code: 'Pizza'
+      Name: 'Pizza',
+      Code: 'Pizza'
     },
     {
-      name: 'PL-11',
-      code: 'PL-11'
+      Name: 'PL-11',
+      Code: 'PL-11'
     },
     {
-      name: 'PL/0',
-      code: 'PL/0'
+      Name: 'PL/0',
+      Code: 'PL/0'
     },
     {
-      name: 'PL/B',
-      code: 'PL/B'
+      Name: 'PL/B',
+      Code: 'PL/B'
     },
     {
-      name: 'PL/C',
-      code: 'PL/C'
+      Name: 'PL/C',
+      Code: 'PL/C'
     },
     {
-      name: 'PL/I',
-      code: 'PL/I'
+      Name: 'PL/I',
+      Code: 'PL/I'
     },
     {
-      name: 'PL/M',
-      code: 'PL/M'
+      Name: 'PL/M',
+      Code: 'PL/M'
     },
     {
-      name: 'PL/P',
-      code: 'PL/P'
+      Name: 'PL/P',
+      Code: 'PL/P'
     },
     {
-      name: 'PL/SQL',
-      code: 'PL/SQL'
+      Name: 'PL/SQL',
+      Code: 'PL/SQL'
     },
     {
-      name: 'PL360',
-      code: 'PL360'
+      Name: 'PL360',
+      Code: 'PL360'
     },
     {
-      name: 'PLANC',
-      code: 'PLANC'
+      Name: 'PLANC',
+      Code: 'PLANC'
     },
     {
-      name: 'Plankalkül',
-      code: 'Plankalkül'
+      Name: 'Plankalkül',
+      Code: 'Plankalkül'
     },
     {
-      name: 'Planner',
-      code: 'Planner'
+      Name: 'Planner',
+      Code: 'Planner'
     },
     {
-      name: 'PLEX',
-      code: 'PLEX'
+      Name: 'PLEX',
+      Code: 'PLEX'
     },
     {
-      name: 'PLEXIL',
-      code: 'PLEXIL'
+      Name: 'PLEXIL',
+      Code: 'PLEXIL'
     },
     {
-      name: 'Plus',
-      code: 'Plus'
+      Name: 'Plus',
+      Code: 'Plus'
     },
     {
-      name: 'POP-11',
-      code: 'POP-11'
+      Name: 'POP-11',
+      Code: 'POP-11'
     },
     {
-      name: 'PostScript',
-      code: 'PostScript'
+      Name: 'PostScript',
+      Code: 'PostScript'
     },
     {
-      name: 'PortablE',
-      code: 'PortablE'
+      Name: 'PortablE',
+      Code: 'PortablE'
     },
     {
-      name: 'Powerhouse',
-      code: 'Powerhouse'
+      Name: 'Powerhouse',
+      Code: 'Powerhouse'
     },
     {
-      name: 'PowerBuilder',
-      code: 'PowerBuilder'
+      Name: 'PowerBuilder',
+      Code: 'PowerBuilder'
     },
     {
-      name: 'PowerShell',
-      code: 'PowerShell'
+      Name: 'PowerShell',
+      Code: 'PowerShell'
     },
     {
-      name: 'PPL',
-      code: 'PPL'
+      Name: 'PPL',
+      Code: 'PPL'
     },
     {
-      name: 'Processing',
-      code: 'Processing'
+      Name: 'Processing',
+      Code: 'Processing'
     },
     {
-      name: 'Processing.js',
-      code: 'Processingjs'
+      Name: 'Processing.js',
+      Code: 'Processingjs'
     },
     {
-      name: 'Prograph',
-      code: 'Prograph'
+      Name: 'Prograph',
+      Code: 'Prograph'
     },
     {
-      name: 'PROIV',
-      code: 'PROIV'
+      Name: 'PROIV',
+      Code: 'PROIV'
     },
     {
-      name: 'Prolog',
-      code: 'Prolog'
+      Name: 'Prolog',
+      Code: 'Prolog'
     },
     {
-      name: 'PROMAL',
-      code: 'PROMAL'
+      Name: 'PROMAL',
+      Code: 'PROMAL'
     },
     {
-      name: 'Promela',
-      code: 'Promela'
+      Name: 'Promela',
+      Code: 'Promela'
     },
     {
-      name: 'PROSE modeling language',
-      code: 'PROSE_modeling_language'
+      Name: 'PROSE modeling language',
+      Code: 'PROSE_modeling_language'
     },
     {
-      name: 'PROTEL',
-      code: 'PROTEL'
+      Name: 'PROTEL',
+      Code: 'PROTEL'
     },
     {
-      name: 'ProvideX',
-      code: 'ProvideX'
+      Name: 'ProvideX',
+      Code: 'ProvideX'
     },
     {
-      name: 'Pro*C',
-      code: 'Pro*C'
+      Name: 'Pro*C',
+      Code: 'Pro*C'
     },
     {
-      name: 'Pure',
-      code: 'Pure'
+      Name: 'Pure',
+      Code: 'Pure'
     },
     {
-      name: 'Python',
-      code: 'Python'
+      Name: 'Python',
+      Code: 'Python'
     },
     {
-      name: 'Q (equational programming language)',
-      code: 'Q_(equational_programming_language)'
+      Name: 'Q (equational programming language)',
+      Code: 'Q_(equational_programming_language)'
     },
     {
-      name: 'Q (programming language from Kx Systems)',
-      code: 'Q_(programming_language_from_Kx_Systems)'
+      Name: 'Q (programming language from Kx Systems)',
+      Code: 'Q_(programming_language_from_Kx_Systems)'
     },
     {
-      name: 'Qalb',
-      code: 'Qalb'
+      Name: 'Qalb',
+      Code: 'Qalb'
     },
     {
-      name: 'QtScript',
-      code: 'QtScript'
+      Name: 'QtScript',
+      Code: 'QtScript'
     },
     {
-      name: 'QuakeC',
-      code: 'QuakeC'
+      Name: 'QuakeC',
+      Code: 'QuakeC'
     },
     {
-      name: 'QPL',
-      code: 'QPL'
+      Name: 'QPL',
+      Code: 'QPL'
     },
     {
-      name: 'R',
-      code: 'R'
+      Name: 'R',
+      Code: 'R'
     },
     {
-      name: 'R++',
-      code: 'R++'
+      Name: 'R++',
+      Code: 'R++'
     },
     {
-      name: 'Racket',
-      code: 'Racket'
+      Name: 'Racket',
+      Code: 'Racket'
     },
     {
-      name: 'RAPID',
-      code: 'RAPID'
+      Name: 'RAPID',
+      Code: 'RAPID'
     },
     {
-      name: 'Rapira',
-      code: 'Rapira'
+      Name: 'Rapira',
+      Code: 'Rapira'
     },
     {
-      name: 'Ratfiv',
-      code: 'Ratfiv'
+      Name: 'Ratfiv',
+      Code: 'Ratfiv'
     },
     {
-      name: 'Ratfor',
-      code: 'Ratfor'
+      Name: 'Ratfor',
+      Code: 'Ratfor'
     },
     {
-      name: 'rc',
-      code: 'rc'
+      Name: 'rc',
+      Code: 'rc'
     },
     {
-      name: 'REBOL',
-      code: 'REBOL'
+      Name: 'REBOL',
+      Code: 'REBOL'
     },
     {
-      name: 'Red',
-      code: 'Red'
+      Name: 'Red',
+      Code: 'Red'
     },
     {
-      name: 'Redcode',
-      code: 'Redcode'
+      Name: 'RedCode',
+      Code: 'RedCode'
     },
     {
-      name: 'REFAL',
-      code: 'REFAL'
+      Name: 'REFAL',
+      Code: 'REFAL'
     },
     {
-      name: 'Reia',
-      code: 'Reia'
+      Name: 'Reia',
+      Code: 'Reia'
     },
     {
-      name: 'Revolution',
-      code: 'Revolution'
+      Name: 'Revolution',
+      Code: 'Revolution'
     },
     {
-      name: 'rex',
-      code: 'rex'
+      Name: 'rex',
+      Code: 'rex'
     },
     {
-      name: 'REXX',
-      code: 'REXX'
+      Name: 'REXX',
+      Code: 'REXX'
     },
     {
-      name: 'Rlab',
-      code: 'Rlab'
+      Name: 'Rlab',
+      Code: 'Rlab'
     },
     {
-      name: 'RobotC',
-      code: 'RobotC'
+      Name: 'RobotC',
+      Code: 'RobotC'
     },
     {
-      name: 'ROOP',
-      code: 'ROOP'
+      Name: 'ROOP',
+      Code: 'ROOP'
     },
     {
-      name: 'RPG',
-      code: 'RPG'
+      Name: 'RPG',
+      Code: 'RPG'
     },
     {
-      name: 'RPL',
-      code: 'RPL'
+      Name: 'RPL',
+      Code: 'RPL'
     },
     {
-      name: 'RSL',
-      code: 'RSL'
+      Name: 'RSL',
+      Code: 'RSL'
     },
     {
-      name: 'RTL/2',
-      code: 'RTL/2'
+      Name: 'RTL/2',
+      Code: 'RTL/2'
     },
     {
-      name: 'Ruby',
-      code: 'Ruby'
+      Name: 'Ruby',
+      Code: 'Ruby'
     },
     {
-      name: 'RuneScript',
-      code: 'RuneScript'
+      Name: 'RuneScript',
+      Code: 'RuneScript'
     },
     {
-      name: 'Rust',
-      code: 'Rust'
+      Name: 'Rust',
+      Code: 'Rust'
     },
     {
-      name: 'S',
-      code: 'S'
+      Name: 'S',
+      Code: 'S'
     },
     {
-      name: 'S2',
-      code: 'S2'
+      Name: 'S2',
+      Code: 'S2'
     },
     {
-      name: 'S3',
-      code: 'S3'
+      Name: 'S3',
+      Code: 'S3'
     },
     {
-      name: 'S-Lang',
-      code: 'S-Lang'
+      Name: 'S-Lang',
+      Code: 'S-Lang'
     },
     {
-      name: 'S-PLUS',
-      code: 'S-PLUS'
+      Name: 'S-PLUS',
+      Code: 'S-PLUS'
     },
     {
-      name: 'SA-C',
-      code: 'SA-C'
+      Name: 'SA-C',
+      Code: 'SA-C'
     },
     {
-      name: 'SabreTalk',
-      code: 'SabreTalk'
+      Name: 'SabreTalk',
+      Code: 'SabreTalk'
     },
     {
-      name: 'SAIL',
-      code: 'SAIL'
+      Name: 'SAIL',
+      Code: 'SAIL'
     },
     {
-      name: 'SALSA',
-      code: 'SALSA'
+      Name: 'SALSA',
+      Code: 'SALSA'
     },
     {
-      name: 'SAM76',
-      code: 'SAM76'
+      Name: 'SAM76',
+      Code: 'SAM76'
     },
     {
-      name: 'SAS',
-      code: 'SAS'
+      Name: 'SAS',
+      Code: 'SAS'
     },
     {
-      name: 'SASL',
-      code: 'SASL'
+      Name: 'SASL',
+      Code: 'SASL'
     },
     {
-      name: 'Sather',
-      code: 'Sather'
+      Name: 'Sather',
+      Code: 'Sather'
     },
     {
-      name: 'Sawzall',
-      code: 'Sawzall'
+      Name: 'Sawzall',
+      Code: 'Sawzall'
     },
     {
-      name: 'SBL',
-      code: 'SBL'
+      Name: 'SBL',
+      Code: 'SBL'
     },
     {
-      name: 'Scala',
-      code: 'Scala'
+      Name: 'Scala',
+      Code: 'Scala'
     },
     {
-      name: 'Scheme',
-      code: 'Scheme'
+      Name: 'Scheme',
+      Code: 'Scheme'
     },
     {
-      name: 'Scilab',
-      code: 'Scilab'
+      Name: 'Scilab',
+      Code: 'Scilab'
     },
     {
-      name: 'Scratch',
-      code: 'Scratch'
+      Name: 'Scratch',
+      Code: 'Scratch'
     },
     {
-      name: 'Script.NET',
-      code: 'Script_dot_NET'
+      Name: 'Script.NET',
+      Code: 'Script_dot_NET'
     },
     {
-      name: 'Sed',
-      code: 'Sed'
+      Name: 'Sed',
+      Code: 'Sed'
     },
     {
-      name: 'Seed7',
-      code: 'Seed7'
+      Name: 'Seed7',
+      Code: 'Seed7'
     },
     {
-      name: 'Self',
-      code: 'Self'
+      Name: 'Self',
+      Code: 'Self'
     },
     {
-      name: 'SenseTalk',
-      code: 'SenseTalk'
+      Name: 'SenseTalk',
+      Code: 'SenseTalk'
     },
     {
-      name: 'SequenceL',
-      code: 'SequenceL'
+      Name: 'SequenceL',
+      Code: 'SequenceL'
     },
     {
-      name: 'SETL',
-      code: 'SETL'
+      Name: 'SETL',
+      Code: 'SETL'
     },
     {
-      name: 'Shift Script',
-      code: 'Shift_Script'
+      Name: 'Shift Script',
+      Code: 'Shift_Script'
     },
     {
-      name: 'SIMPOL',
-      code: 'SIMPOL'
+      Name: 'SIMPOL',
+      Code: 'SIMPOL'
     },
     {
-      name: 'SIGNAL',
-      code: 'SIGNAL'
+      Name: 'SIGNAL',
+      Code: 'SIGNAL'
     },
     {
-      name: 'SiMPLE',
-      code: 'SiMPLE'
+      Name: 'SiMPLE',
+      Code: 'SiMPLE'
     },
     {
-      name: 'SIMSCRIPT',
-      code: 'SIMSCRIPT'
+      Name: 'SIMSCRIPT',
+      Code: 'SIMSCRIPT'
     },
     {
-      name: 'Simula',
-      code: 'Simula'
+      Name: 'Simula',
+      Code: 'Simula'
     },
     {
-      name: 'Simulink',
-      code: 'Simulink'
+      Name: 'Simulink',
+      Code: 'Simulink'
     },
     {
-      name: 'SISAL',
-      code: 'SISAL'
+      Name: 'SISAL',
+      Code: 'SISAL'
     },
     {
-      name: 'SLIP',
-      code: 'SLIP'
+      Name: 'SLIP',
+      Code: 'SLIP'
     },
     {
-      name: 'SMALL',
-      code: 'SMALL'
+      Name: 'SMALL',
+      Code: 'SMALL'
     },
     {
-      name: 'Smalltalk',
-      code: 'Smalltalk'
+      Name: 'Smalltalk',
+      Code: 'Smalltalk'
     },
     {
-      name: 'Small Basic',
-      code: 'Small_Basic'
+      Name: 'Small Basic',
+      Code: 'Small_Basic'
     },
     {
-      name: 'SML',
-      code: 'SML'
+      Name: 'SML',
+      Code: 'SML'
     },
     {
-      name: 'Snap!',
-      code: 'Snap!'
+      Name: 'Snap!',
+      Code: 'Snap!'
     },
     {
-      name: 'SNOBOL',
-      code: 'SNOBOL'
+      Name: 'SNOBOL',
+      Code: 'SNOBOL'
     },
     {
-      name: 'SPITBOL',
-      code: 'SPITBOL'
+      Name: 'SPITBOL',
+      Code: 'SPITBOL'
     },
     {
-      name: 'Snowball',
-      code: 'Snowball'
+      Name: 'Snowball',
+      Code: 'Snowball'
     },
     {
-      name: 'SOL',
-      code: 'SOL'
+      Name: 'SOL',
+      Code: 'SOL'
     },
     {
-      name: 'Span',
-      code: 'Span'
+      Name: 'Span',
+      Code: 'Span'
     },
     {
-      name: 'SPARK',
-      code: 'SPARK'
+      Name: 'SPARK',
+      Code: 'SPARK'
     },
     {
-      name: 'Speedcode',
-      code: 'Speedcode'
+      Name: 'SpeedCode',
+      Code: 'SpeedCode'
     },
     {
-      name: 'SPIN',
-      code: 'SPIN'
+      Name: 'SPIN',
+      Code: 'SPIN'
     },
     {
-      name: 'SP/k',
-      code: 'SP/k'
+      Name: 'SP/k',
+      Code: 'SP/k'
     },
     {
-      name: 'SPS',
-      code: 'SPS'
+      Name: 'SPS',
+      Code: 'SPS'
     },
     {
-      name: 'Squeak',
-      code: 'Squeak'
+      Name: 'Squeak',
+      Code: 'Squeak'
     },
     {
-      name: 'Squirrel',
-      code: 'Squirrel'
+      Name: 'Squirrel',
+      Code: 'Squirrel'
     },
     {
-      name: 'SR',
-      code: 'SR'
+      Name: 'SR',
+      Code: 'SR'
     },
     {
-      name: 'S/SL',
-      code: 'S/SL'
+      Name: 'S/SL',
+      Code: 'S/SL'
     },
     {
-      name: 'Stackless Python',
-      code: 'Stackless_Python'
+      Name: 'Stackless Python',
+      Code: 'Stackless_Python'
     },
     {
-      name: 'Starlogo',
-      code: 'Starlogo'
+      Name: 'Starlogo',
+      Code: 'Starlogo'
     },
     {
-      name: 'Strand',
-      code: 'Strand'
+      Name: 'Strand',
+      Code: 'Strand'
     },
     {
-      name: 'Stata',
-      code: 'Stata'
+      Name: 'Stata',
+      Code: 'Stata'
     },
     {
-      name: 'Stateflow',
-      code: 'Stateflow'
+      Name: 'Stateflow',
+      Code: 'Stateflow'
     },
     {
-      name: 'Subtext',
-      code: 'Subtext'
+      Name: 'Subtext',
+      Code: 'Subtext'
     },
     {
-      name: 'SuperCollider',
-      code: 'SuperCollider'
+      Name: 'SuperCollider',
+      Code: 'SuperCollider'
     },
     {
-      name: 'SuperTalk',
-      code: 'SuperTalk'
+      Name: 'SuperTalk',
+      Code: 'SuperTalk'
     },
     {
-      name: 'Swift (Apple programming language)',
-      code: 'Swift_(Apple_programming_language)'
+      Name: 'Swift (Apple programming language)',
+      Code: 'Swift_(Apple_programming_language)'
     },
     {
-      name: 'Swift (parallel scripting language)',
-      code: 'Swift_(parallel_scripting_language)'
+      Name: 'Swift (parallel scripting language)',
+      Code: 'Swift_(parallel_scripting_language)'
     },
     {
-      name: 'SYMPL',
-      code: 'SYMPL'
+      Name: 'SYMPL',
+      Code: 'SYMPL'
     },
     {
-      name: 'SyncCharts',
-      code: 'SyncCharts'
+      Name: 'SyncCharts',
+      Code: 'SyncCharts'
     },
     {
-      name: 'SystemVerilog',
-      code: 'SystemVerilog'
+      Name: 'SystemVerilog',
+      Code: 'SystemVerilog'
     },
     {
-      name: 'T',
-      code: 'T'
+      Name: 'T',
+      Code: 'T'
     },
     {
-      name: 'TACL',
-      code: 'TACL'
+      Name: 'TACL',
+      Code: 'TACL'
     },
     {
-      name: 'TACPOL',
-      code: 'TACPOL'
+      Name: 'TACPOL',
+      Code: 'TACPOL'
     },
     {
-      name: 'TADS',
-      code: 'TADS'
+      Name: 'TADS',
+      Code: 'TADS'
     },
     {
-      name: 'TAL',
-      code: 'TAL'
+      Name: 'TAL',
+      Code: 'TAL'
     },
     {
-      name: 'Tcl',
-      code: 'Tcl'
+      Name: 'Tcl',
+      Code: 'Tcl'
     },
     {
-      name: 'Tea',
-      code: 'Tea'
+      Name: 'Tea',
+      Code: 'Tea'
     },
     {
-      name: 'TECO',
-      code: 'TECO'
+      Name: 'TECO',
+      Code: 'TECO'
     },
     {
-      name: 'TELCOMP',
-      code: 'TELCOMP'
+      Name: 'TELCOMP',
+      Code: 'TELCOMP'
     },
     {
-      name: 'TeX',
-      code: 'TeX'
+      Name: 'TeX',
+      Code: 'TeX'
     },
     {
-      name: 'TEX',
-      code: 'TEX'
+      Name: 'TEX',
+      Code: 'TEX'
     },
     {
-      name: 'TIE',
-      code: 'TIE'
+      Name: 'TIE',
+      Code: 'TIE'
     },
     {
-      name: 'Timber',
-      code: 'Timber'
+      Name: 'Timber',
+      Code: 'Timber'
     },
     {
-      name: 'TMG',
-      code: 'TMG'
+      Name: 'TMG',
+      Code: 'TMG'
     },
     {
-      name: 'Tom',
-      code: 'Tom'
+      Name: 'Tom',
+      Code: 'Tom'
     },
     {
-      name: 'TOM',
-      code: 'TOM'
+      Name: 'TOM',
+      Code: 'TOM'
     },
     {
-      name: 'Topspeed',
-      code: 'Topspeed'
+      Name: 'Topspeed',
+      Code: 'Topspeed'
     },
     {
-      name: 'TPU',
-      code: 'TPU'
+      Name: 'TPU',
+      Code: 'TPU'
     },
     {
-      name: 'Trac',
-      code: 'Trac'
+      Name: 'Trac',
+      Code: 'Trac'
     },
     {
-      name: 'TTM',
-      code: 'TTM'
+      Name: 'TTM',
+      Code: 'TTM'
     },
     {
-      name: 'T-SQL',
-      code: 'T-SQL'
+      Name: 'T-SQL',
+      Code: 'T-SQL'
     },
     {
-      name: 'TTCN',
-      code: 'TTCN'
+      Name: 'TTCN',
+      Code: 'TTCN'
     },
     {
-      name: 'Turing',
-      code: 'Turing'
+      Name: 'Turing',
+      Code: 'Turing'
     },
     {
-      name: 'TUTOR',
-      code: 'TUTOR'
+      Name: 'TUTOR',
+      Code: 'TUTOR'
     },
     {
-      name: 'TXL',
-      code: 'TXL'
+      Name: 'TXL',
+      Code: 'TXL'
     },
     {
-      name: 'TypeScript',
-      code: 'TypeScript'
+      Name: 'TypeScript',
+      Code: 'TypeScript'
     },
     {
-      name: 'Turbo C++',
-      code: 'Turbo_C++'
+      Name: 'Turbo C++',
+      Code: 'Turbo_C++'
     },
     {
-      name: 'Ubercode',
-      code: 'Ubercode'
+      Name: 'UberCode',
+      Code: 'UberCode'
     },
     {
-      name: 'UCSD Pascal',
-      code: 'UCSD_Pascal'
+      Name: 'UCSD Pascal',
+      Code: 'UCSD_Pascal'
     },
     {
-      name: 'Umple',
-      code: 'Umple'
+      Name: 'Umple',
+      Code: 'Umple'
     },
     {
-      name: 'Unicon',
-      code: 'Unicon'
+      Name: 'Unicon',
+      Code: 'Unicon'
     },
     {
-      name: 'Uniface',
-      code: 'Uniface'
+      Name: 'Uniface',
+      Code: 'Uniface'
     },
     {
-      name: 'UNITY',
-      code: 'UNITY'
+      Name: 'UNITY',
+      Code: 'UNITY'
     },
     {
-      name: 'Unix shell',
-      code: 'Unix_shell'
+      Name: 'Unix shell',
+      Code: 'Unix_shell'
     },
     {
-      name: 'UnrealScript',
-      code: 'UnrealScript'
+      Name: 'UnrealScript',
+      Code: 'UnrealScript'
     },
     {
-      name: 'Vala',
-      code: 'Vala'
+      Name: 'Vala',
+      Code: 'Vala'
     },
     {
-      name: 'VBA',
-      code: 'VBA'
+      Name: 'VBA',
+      Code: 'VBA'
     },
     {
-      name: 'VBScript',
-      code: 'VBScript'
+      Name: 'VBScript',
+      Code: 'VBScript'
     },
     {
-      name: 'Verilog',
-      code: 'Verilog'
+      Name: 'Verilog',
+      Code: 'Verilog'
     },
     {
-      name: 'VHDL',
-      code: 'VHDL'
+      Name: 'VHDL',
+      Code: 'VHDL'
     },
     {
-      name: 'Visual Basic',
-      code: 'Visual_Basic'
+      Name: 'Visual Basic',
+      Code: 'Visual_Basic'
     },
     {
-      name: 'Visual Basic .NET',
-      code: 'Visual_Basic_dot_NET'
+      Name: 'Visual Basic .NET',
+      Code: 'Visual_Basic_dot_NET'
     },
     {
-      name: 'Visual DataFlex',
-      code: 'Visual_DataFlex'
+      Name: 'Visual DataFlex',
+      Code: 'Visual_DataFlex'
     },
     {
-      name: 'Visual DialogScript',
-      code: 'Visual_DialogScript'
+      Name: 'Visual DialogScript',
+      Code: 'Visual_DialogScript'
     },
     {
-      name: 'Visual Fortran',
-      code: 'Visual_Fortran'
+      Name: 'Visual Fortran',
+      Code: 'Visual_Fortran'
     },
     {
-      name: 'Visual FoxPro',
-      code: 'Visual_FoxPro'
+      Name: 'Visual FoxPro',
+      Code: 'Visual_FoxPro'
     },
     {
-      name: 'Visual J++',
-      code: 'Visual_J++'
+      Name: 'Visual J++',
+      Code: 'Visual_J++'
     },
     {
-      name: 'Visual J#',
-      code: 'Visual_Jsharp'
+      Name: 'Visual J#',
+      Code: 'Visual_Jsharp'
     },
     {
-      name: 'Visual Objects',
-      code: 'Visual_Objects'
+      Name: 'Visual Objects',
+      Code: 'Visual_Objects'
     },
     {
-      name: 'Visual Prolog',
-      code: 'Visual_Prolog'
+      Name: 'Visual Prolog',
+      Code: 'Visual_Prolog'
     },
     {
-      name: 'VSXu',
-      code: 'VSXu'
+      Name: 'VSXu',
+      Code: 'VSXu'
     },
     {
-      name: 'Vvvv',
-      code: 'Vvvv'
+      Name: 'Vvvv',
+      Code: 'Vvvv'
     },
     {
-      name: 'WATFIV, WATFOR',
-      code: 'WATFIV,_WATFOR'
+      Name: 'WATFIV, WATFOR',
+      Code: 'WATFIV,_WATFOR'
     },
     {
-      name: 'WebDNA',
-      code: 'WebDNA'
+      Name: 'WebDNA',
+      Code: 'WebDNA'
     },
     {
-      name: 'WebQL',
-      code: 'WebQL'
+      Name: 'WebQL',
+      Code: 'WebQL'
     },
     {
-      name: 'Windows PowerShell',
-      code: 'Windows_PowerShell'
+      Name: 'Windows PowerShell',
+      Code: 'Windows_PowerShell'
     },
     {
-      name: 'Winbatch',
-      code: 'Winbatch'
+      Name: 'Winbatch',
+      Code: 'Winbatch'
     },
     {
-      name: 'Wolfram',
-      code: 'Wolfram'
+      Name: 'Wolfram',
+      Code: 'Wolfram'
     },
     {
-      name: 'Wyvern',
-      code: 'Wyvern'
+      Name: 'Wyvern',
+      Code: 'Wyvern'
     },
     {
-      name: 'X++',
-      code: 'X++'
+      Name: 'X++',
+      Code: 'X++'
     },
     {
-      name: 'X#',
-      code: 'Xsharp'
+      Name: 'X#',
+      Code: 'Xsharp'
     },
     {
-      name: 'X10',
-      code: 'X10'
+      Name: 'X10',
+      Code: 'X10'
     },
     {
-      name: 'XBL',
-      code: 'XBL'
+      Name: 'XBL',
+      Code: 'XBL'
     },
     {
-      name: 'XC',
-      code: 'XC'
+      Name: 'XC',
+      Code: 'XC'
     },
     {
-      name: 'XMOS architecture',
-      code: 'XMOS_architecture'
+      Name: 'XMOS architecture',
+      Code: 'XMOS_architecture'
     },
     {
-      name: 'xHarbour',
-      code: 'xHarbour'
+      Name: 'xHarbour',
+      Code: 'xHarbour'
     },
     {
-      name: 'XL',
-      code: 'XL'
+      Name: 'XL',
+      Code: 'XL'
     },
     {
-      name: 'Xojo',
-      code: 'Xojo'
+      Name: 'Xojo',
+      Code: 'Xojo'
     },
     {
-      name: 'XOTcl',
-      code: 'XOTcl'
+      Name: 'XOTcl',
+      Code: 'XOTcl'
     },
     {
-      name: 'XPL',
-      code: 'XPL'
+      Name: 'XPL',
+      Code: 'XPL'
     },
     {
-      name: 'XPL0',
-      code: 'XPL0'
+      Name: 'XPL0',
+      Code: 'XPL0'
     },
     {
-      name: 'XQuery',
-      code: 'XQuery'
+      Name: 'XQuery',
+      Code: 'XQuery'
     },
     {
-      name: 'XSB',
-      code: 'XSB'
+      Name: 'XSB',
+      Code: 'XSB'
     },
     {
-      name: 'XSLT',
-      code: 'XSLT'
+      Name: 'XSLT',
+      Code: 'XSLT'
     },
     {
-      name: 'XPath',
-      code: 'XPath'
+      Name: 'XPath',
+      Code: 'XPath'
     },
     {
-      name: 'Xtend',
-      code: 'Xtend'
+      Name: 'Xtend',
+      Code: 'Xtend'
     },
     {
-      name: 'Yorick',
-      code: 'Yorick'
+      Name: 'Yorick',
+      Code: 'Yorick'
     },
     {
-      name: 'YQL',
-      code: 'YQL'
+      Name: 'YQL',
+      Code: 'YQL'
     },
     {
-      name: 'Z notation',
-      code: 'Z_notation'
+      Name: 'Z notation',
+      Code: 'Z_notation'
     },
     {
-      name: 'Zeno',
-      code: 'Zeno'
+      Name: 'Zeno',
+      Code: 'Zeno'
     },
     {
-      name: 'ZOPL',
-      code: 'ZOPL'
+      Name: 'ZOPL',
+      Code: 'ZOPL'
     },
     {
-      name: 'ZPL',
-      code: 'ZPL'
+      Name: 'ZPL',
+      Code: 'ZPL'
     }
   ];

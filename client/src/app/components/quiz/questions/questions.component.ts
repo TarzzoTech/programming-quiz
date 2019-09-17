@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy, EventEmitter, Output } from '@angular/core';
-import { Question, SelectedAnswers } from 'src/app/models';
+import { Question, SelectedAnswers, QuestionOption } from 'src/app/models';
 import { Subscription } from 'rxjs';
 import { QuizService } from 'src/app/services/quiz.service';
 // import { EmptyQuestionBuilder } from 'src/app/builders';
@@ -12,6 +12,7 @@ import { QuizService } from 'src/app/services/quiz.service';
 export class QuestionsComponent implements OnInit, OnDestroy {
 
   question: Question;
+  questionOptions: string[];
   questionNumber: number;
   questionSelectSubscription: Subscription;
   selectedOption: string;
@@ -26,6 +27,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
     this.questionSelectSubscription = this.quiz.onQuestionSelect.subscribe((qNum) => {
       this.questionNumber = qNum + 1;
       this.question = this.quiz.getQuestion(qNum);
+      this.questionOptions = Object.keys(this.question.Options);
       this.selectedOption = this.question.SelectedAnswers;
     });
   }

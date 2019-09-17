@@ -7,17 +7,8 @@
     </p>
     <mat-radio-group aria-labelledby="example-radio-group-label" class="material-radio-group"
         [ngModel]="selectedOption" (ngModelChange)="onChange($event)">
-        <mat-radio-button [value]="'a'" class="material-radio-button">
-            {{question?.Options['a']}}
-        </mat-radio-button>
-        <mat-radio-button [value]="'b'" class="material-radio-button">
-            {{question?.Options['b']}}
-        </mat-radio-button>
-        <mat-radio-button [value]="'c'" class="material-radio-button">
-            {{question?.Options['c']}}
-        </mat-radio-button>
-        <mat-radio-button [value]="'d'" class="material-radio-button">
-            {{question?.Options['d']}}
+        <mat-radio-button [value]="question?.Options[optionKey]" *ngFor="let optionKey of questionOptions" class="material-radio-button">
+            {{question?.Options[optionKey]}}
         </mat-radio-button>
     </mat-radio-group>
 </div>
