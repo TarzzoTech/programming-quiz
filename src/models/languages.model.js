@@ -11,4 +11,4 @@ const Language = new Schema({
     }
 });
 
-export default mongoose.model("Language", Language);
+module.exports = mongoose.model("Language", Language);

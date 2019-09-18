@@ -43,4 +43,4 @@ const Question = new Schema({
     }
 });
 
-export default mongoose.model("Question", Question);
+module.exports = mongoose.model("Question", Question);

@@ -11,7 +11,7 @@ const PORT = 3000;
 const app = express();
 
 // DB connection
-mongoose.connect(MONGODB_URI);
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 const connection = mongoose.connection;
 

@@ -19,4 +19,4 @@ const Quiz = new Schema({
     },
 });
 
-export default mongoose.model("Quiz", Quiz);
+module.exports = mongoose.model("Quiz", Quiz);

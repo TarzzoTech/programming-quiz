@@ -8,10 +8,13 @@ const User = new Schema({
     Name: {
         type: String
     },
+    Role: {
+        type: Number
+    },
     Email: {
         type: String
     },
-    Password: {
+    PasswordHash: {
         type: String
     },
     SaltRound: {
@@ -19,4 +22,4 @@ const User = new Schema({
     }
 });
 
-export default mongoose.model("User", User);
+module.exports = mongoose.model("User", User);
