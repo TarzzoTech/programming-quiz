@@ -35,9 +35,9 @@ app.get("/", (req, res, next) => {
 
 // controllers import
 const AuthController = require("./src/controllers/auth.controller");
-const LanguagesController = require("./src/controllers/auth.controller");
-const QuestionsController = require("./src/controllers/auth.controller");
-const QuizController = require("./src/controllers/auth.controller");
+const LanguagesController = require("./src/controllers/languages.controller");
+const QuestionsController = require("./src/controllers/questions.controller");
+const QuizController = require("./src/controllers/quiz.controller");
 
 // controllers configurations
 app.use("/auth", AuthController);
