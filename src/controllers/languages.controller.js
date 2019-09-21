@@ -23,11 +23,11 @@ router.get("/available-languages", (req, res, next) => {
 });
 
 // add multiple languages
-// router.post("/add-languages", (req, res, next) => {
-//     Language.collection.insert(req.body.data).then((data) => {
-//         res.status(200).json(data);
-//     }).catch(err => next(err));
-// });
+router.post("/add-languages", (req, res, next) => {
+    Language.collection.insert(req.body.data).then((data) => {
+        res.status(200).json(data);
+    }).catch(err => next(err));
+});
 
 // set inactive for all the questions by language Id
 router.delete("/:languageId", (req, res, next) => {
