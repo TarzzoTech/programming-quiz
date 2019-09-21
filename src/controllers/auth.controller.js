@@ -5,7 +5,11 @@ const User = require("../models/user.modal");
 
 router.post("/validate-email", (req, res, next) => {
     User.findOne({ Email: req.body.Email }).then((user) => {
-        res.status(200).json(user.Name);
+        if (user) {
+            res.status(200).json(user.Name);
+        } else {
+            res.status(200).json(null);
+        }
     }).catch(err => {
         res.status(200).json(false);
         next(err);

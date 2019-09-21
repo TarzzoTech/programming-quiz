@@ -14,7 +14,7 @@ const Quiz = new Schema({
     Score: {
         type: String
     },
-    createdDate: {
+    CreatedDate: {
         type: Date
     },
 });

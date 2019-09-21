@@ -11,7 +11,8 @@ router.get("/all-entries", (req, res, next) => {
 
 // insert quiz result
 router.post("/quiz-entry", (req, res, next) => {
-    Quiz.collection.insert(req.body).then(data => {
+    const quizData = { ...req.body, createdDate: new Date() };
+    Quiz.collection.insert(quizData).then(data => {
         res.status(200).json(true);
     }).catch(err => next(err));
 });
