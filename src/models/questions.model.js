@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
-const ObjectId = mongoose.Schema.Types.ObjectId;
 const Mixed = Schema.Types.Mixed;
 
 const QuestionOption = new Schema({
@@ -20,7 +19,6 @@ const QuestionOption = new Schema({
 });
 
 const Question = new Schema({
-    Id: ObjectId,
     LanguageId: {
         type: String
     },
