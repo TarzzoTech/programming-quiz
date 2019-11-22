@@ -7,8 +7,7 @@
 /out-tsc
 *.*.bak
 package-lock.json
-/client
-
+/connector.js
 .vscode
 
 # dependencies

@@ -3,15 +3,15 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const mongo = require("./connector");
 
-const MONGODB_URI = "mongodb://admin:Admin7@ds145486.mlab.com:45486/programming-quiz";
 
 const PORT = 3000;
 
 const app = express();
 
 // DB connection
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+mongoose.connect(mongo.MONGODB_URI, { useNewUrlParser: true });
 
 const connection = mongoose.connection;
 
