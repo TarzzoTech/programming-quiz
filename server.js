@@ -38,11 +38,13 @@ const AuthController = require("./src/controllers/auth.controller");
 const LanguagesController = require("./src/controllers/topics.controller");
 const QuestionsController = require("./src/controllers/questions.controller");
 const QuizController = require("./src/controllers/quiz.controller");
+const InstructionController = require("./src/controllers/instruction.controller");
 
 // controllers configurations
 app.use("/auth", AuthController);
 app.use("/languages", LanguagesController);
 app.use("/questions", QuestionsController);
 app.use("/quiz", QuizController);
+app.use("/instructions", InstructionController);
 
 app.listen(PORT);
