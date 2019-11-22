@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const Language = new Schema({
+const Topic = new Schema({
     Name: {
         type: String
     },
@@ -11,4 +11,4 @@ const Language = new Schema({
     }
 });
 
-module.exports = mongoose.model("Language", Language);
+module.exports = mongoose.model("Topic", Topic);

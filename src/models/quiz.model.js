@@ -9,6 +9,9 @@ const Quiz = new Schema({
     Email: {
         type: String
     },
+    TopicId: {
+        type: String
+    },
     Score: {
         type: String
     },

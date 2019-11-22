@@ -18,6 +18,7 @@ router.post("/quiz-entry", (req, res, next) => {
         const quizData = {
             Name: req.body.Name,
             Email: req.body.Email,
+            TopicId: req.body.SelectedLanguage,
             Score,
             CreatedDate: new Date()
         };
