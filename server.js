@@ -49,4 +49,6 @@ app.use("/quiz", QuizController);
 app.use("/instructions", InstructionController);
 app.use("/settings", SettingController);
 
-app.listen(PORT);
+app.listen(PORT, function() {
+    console.log('Our app is running on http://localhost:' + PORT);
+});
