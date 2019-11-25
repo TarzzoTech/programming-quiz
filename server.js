@@ -6,7 +6,7 @@ const cors = require("cors");
 const mongo = require("./connector");
 
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
