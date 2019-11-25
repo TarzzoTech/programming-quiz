@@ -29,8 +29,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, "public")));
 
 // routes
-app.get("/", (req, res, next) => {
-    res.send("Hello!");
+app.get("/", (req, res) => {
+    res.render('index');
 });
 
 // controllers import
