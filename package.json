@@ -4,8 +4,7 @@
   "description": "A Programming Quiz online test Application.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "serve": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -27,8 +26,5 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.6.9"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.1"
   }
 }
