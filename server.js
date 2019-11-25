@@ -3,15 +3,15 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const mongo = require("./connector");
 
-const MONGODB_URI = "mongodb://admin:Admin7@ds145486.mlab.com:45486/programming-quiz";
 
 const PORT = 3000;
 
 const app = express();
 
 // DB connection
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+mongoose.connect(mongo.MONGODB_URI, { useNewUrlParser: true });
 
 const connection = mongoose.connection;
 
@@ -35,14 +35,18 @@ app.get("/", (req, res, next) => {
 
 // controllers import
 const AuthController = require("./src/controllers/auth.controller");
-const LanguagesController = require("./src/controllers/languages.controller");
+const LanguagesController = require("./src/controllers/topics.controller");
 const QuestionsController = require("./src/controllers/questions.controller");
 const QuizController = require("./src/controllers/quiz.controller");
+const InstructionController = require("./src/controllers/instruction.controller");
+const SettingController = require("./src/controllers/settings.controller");
 
 // controllers configurations
 app.use("/auth", AuthController);
 app.use("/languages", LanguagesController);
 app.use("/questions", QuestionsController);
 app.use("/quiz", QuizController);
+app.use("/instructions", InstructionController);
+app.use("/settings", SettingController);
 
 app.listen(PORT);
