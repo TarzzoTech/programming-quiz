@@ -6,7 +6,7 @@ const cors = require("cors");
 const mongo = require("./connector");
 
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -29,8 +29,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, "public")));
 
 // routes
-app.get("/", (req, res, next) => {
-    res.send("Hello!");
+app.get("/", (req, res) => {
+    res.render('index');
 });
 
 // controllers import
@@ -49,4 +49,6 @@ app.use("/quiz", QuizController);
 app.use("/instructions", InstructionController);
 app.use("/settings", SettingController);
 
-app.listen(PORT);
+app.listen(PORT, function() {
+    console.log('Our app is running on http://localhost:' + PORT);
+});
