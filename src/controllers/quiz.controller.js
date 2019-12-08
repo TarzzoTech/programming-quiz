@@ -13,12 +13,12 @@ router.get("/all-entries", (req, res, next) => {
 
 // insert quiz result
 router.post("/quiz-entry", (req, res, next) => {
-    Question.find({ LanguageId: req.body.SelectedLanguage, IsActive: true }).limit(15).then(questions => {
+    Question.find({ TopicId: req.body.SelectedTopic, IsActive: true }).limit(15).then(questions => {
         const Score = scoreCalculator(questions, req.body.QuestionEntry);
         const quizData = {
             Name: req.body.Name,
             Email: req.body.Email,
-            TopicId: req.body.SelectedLanguage,
+            TopicId: req.body.SelectedTopic,
             Score,
             CreatedDate: new Date()
         };

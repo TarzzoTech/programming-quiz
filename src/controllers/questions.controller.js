@@ -16,9 +16,9 @@ router.get("/:questionId", (req, res, next) => {
     }).catch(err => next(err));
 });
 
-// get questions based on language Id
-router.get("/quiz-questions/:languageId", (req, res, next) => {
-    Question.find({ LanguageId: req.params.languageId, IsActive: true }).limit(15).then(questions => {
+// get questions based on topic Id
+router.get("/quiz-questions/:topicId", (req, res, next) => {
+    Question.find({ TopicId: req.params.topicId, IsActive: true }).limit(15).then(questions => {
         if (questions && questions.length > 0) {
             question = questions.map(question => {
                 question.Answer = '';

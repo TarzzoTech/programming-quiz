@@ -19,7 +19,7 @@ const QuestionOption = new Schema({
 });
 
 const Question = new Schema({
-    LanguageId: {
+    TopicId: {
         type: String
     },
     Title: {
