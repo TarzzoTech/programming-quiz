@@ -2,12 +2,13 @@ const express = require("express");
 const router = express.Router();
 const Quiz = require("../models/quiz.model");
 const Question = require("../models/questions.model");
-const scoreCalculator = require("../Service/quiz").ScoreCalculator;
+const scoreCalculator = require("../service/quiz").ScoreCalculator;
+const { QuizListBuilder } = require('../builder/quiz');
 
 // get all quiz entries
 router.get("/all-entries", (req, res, next) => {
     Quiz.find().then(quizEntries => {
-        res.status(200).json(quizEntries);
+        res.status(200).json(new QuizListBuilder(quizEntries).getInstance());
     }).catch(err => next(err));
 });
 

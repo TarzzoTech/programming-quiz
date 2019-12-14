@@ -36,6 +36,9 @@ const Question = new Schema({
         type: Number
     },
     SelectedAnswers: Mixed,
+    CreatedDate: {
+        type: Date
+    },
     IsActive: {
         type: Boolean
     }

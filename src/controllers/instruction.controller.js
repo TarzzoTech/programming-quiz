@@ -1,11 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const Instruction = require("../models/instructions.modal");
+const { InstructionBuilder } = require('../builder/instruction');
 
 router.get("/quiz-instructions", (req, res, next) => {
     Instruction.find().then((instructions) => {
         if (instructions && instructions.length > 0) {
-            res.status(200).json(instructions[0]);
+            res.status(200).json(new InstructionBuilder(instructions[0]).getInstance(false));
         } else {
             res.status(200).json([]);
         }
@@ -13,6 +14,24 @@ router.get("/quiz-instructions", (req, res, next) => {
         res.status(200).json(false);
         next(err);
     });
+});
+
+router.put("/:instructionId", (req, res, next) => {
+    if (req.body.instructionId) {
+        Instruction.findByIdAndUpdate(req.body.instructionId, new InstructionBuilder(req.body).getInstance(false)).then(() => {
+            res.status(200).json(true);
+        }).catch(err => {
+            res.status(200).json(false);
+            next(err)
+        });
+    } else {
+        Instruction.collection.insert(new InstructionBuilder(req.body).getInstance()).then(() => {
+            res.status(200).json(true);
+        }).catch(err => {
+            res.status(200).json(false);
+            next(err)
+        });
+    }
 });
 
 module.exports = router;
