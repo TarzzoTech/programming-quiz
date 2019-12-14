@@ -26,9 +26,10 @@ router.get("/:questionId", (req, res, next) => {
 router.get("/quiz-questions/:topicId", (req, res, next) => {
     Question.find({ TopicId: req.params.topicId, IsActive: true }).limit(15).then(questions => {
         if (questions && questions.length > 0) {
-            const QuestionsList = new QuestionsListBuilder(questions).getInstance();
+            let QuestionsList = new QuestionsListBuilder(questions).getInstance();
             QuestionsList = QuestionsList.map(question => {
                 question.Answer = '';
+                return question;
             });
             res.status(200).json(QuestionsList);
         } else {

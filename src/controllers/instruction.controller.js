@@ -16,9 +16,9 @@ router.get("/quiz-instructions", (req, res, next) => {
     });
 });
 
-router.put("/:instructionId", (req, res, next) => {
-    if (req.body.instructionId) {
-        Instruction.findByIdAndUpdate(req.body.instructionId, new InstructionBuilder(req.body).getInstance(false)).then(() => {
+router.put("/add-or-update/:instructionId", (req, res, next) => {
+    if (req.params.instructionId) {
+        Instruction.findByIdAndUpdate(req.params.instructionId, new InstructionBuilder(req.body).getInstance(false)).then(() => {
             res.status(200).json(true);
         }).catch(err => {
             res.status(200).json(false);

@@ -13,9 +13,9 @@ router.get("/", (req, res, next) => {
     });
 });
 
-router.put("/:settingId", (req, res, next) => {
-    if (req.body.settingId) {
-        Setting.findByIdAndUpdate(req.body.settingId, new SettingBuilder(req.body).getInstance(false)).then(() => {
+router.put("/add-or-update/:settingId", (req, res, next) => {
+    if (req.params.settingId) {
+        Setting.findByIdAndUpdate(req.params.settingId, new SettingBuilder(req.body).getInstance(false)).then(() => {
             res.status(200).json(true);
         }).catch(err => {
             res.status(200).json(false);
