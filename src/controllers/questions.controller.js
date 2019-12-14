@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const Question = require("../models/questions.model");
+const Setting = require("../models/settings.modal");
+const { SettingBuilder } = require('../builder/setting');
 const { QuestionBuilder, QuestionsListBuilder } = require('../builder/question');
 
 // get all active question
@@ -36,18 +38,20 @@ router.get("/:questionId", (req, res, next) => {
 
 // get questions based on topic Id
 router.get("/quiz-questions/:topicId", (req, res, next) => {
-    Question.find({ TopicId: req.params.topicId, IsActive: true }).limit(15).then(questions => {
-        if (questions && questions.length > 0) {
-            let QuestionsList = new QuestionsListBuilder(questions).getInstance();
-            QuestionsList = QuestionsList.map(question => {
-                question.Answer = '';
-                return question;
-            });
-            res.status(200).json(QuestionsList);
-        } else {
-            res.status(200).json([]);
-        }
-    }).catch(err => next(err));
+    Setting.find().then(settings => {
+        const settingObject = new SettingBuilder(settings[0]).getInstance(false);
+        Question.find({ TopicId: req.params.topicId, IsActive: true }).then(questions => {
+            if (questions && questions.length > 0) {
+                let QuestionsList = new QuestionsListBuilder(questions).getQuizInstance(settingObject);
+                res.status(200).json(QuestionsList);
+            } else {
+                res.status(200).json([]);
+            }
+        }).catch(err => next(err));
+    }).catch(err => {
+        res.status(200).json({});
+        next(err)
+    });
 });
 
 // inserting the question

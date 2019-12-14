@@ -1,3 +1,5 @@
+const { getArrayOfUniqueNumS } = require('../utils/question');
+
 class QuestionsListBuilder {
     constructor(questionList) {
         this.questionList = questionList;
@@ -23,6 +25,23 @@ class QuestionsListBuilder {
                 IsActive: question.IsActive,
             }
         });
+    }
+
+    getQuizInstance(settings) {
+        let qList = this.getInstance();
+        let finalList = [];
+        if (settings.IsRandom) {
+            const totalNum = settings.QuizQuestionsCount > qList.length ? qList.length : settings.QuizQuestionsCount;
+            const qNumList = getArrayOfUniqueNumS(totalNum, qList.length);
+            finalList = qList.filter((q, i) => qNumList.indexOf(i) > -1);
+        } else {
+            finalList = qList.slice(0, settings.QuizQuestionsCount);
+        }
+        finalList = finalList.map(question => {
+            question.Answer = '';
+            return question;
+        });
+        return finalList;
     }
 }
 
