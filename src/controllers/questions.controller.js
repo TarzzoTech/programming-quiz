@@ -3,9 +3,21 @@ const router = express.Router();
 const Question = require("../models/questions.model");
 const { QuestionBuilder, QuestionsListBuilder } = require('../builder/question');
 
-// get all the question
+// get all active question
 router.get("/", (req, res, next) => {
     Question.find({ IsActive: true }).then(questions => {
+        if (questions && questions.length > 0) {
+            const QuestionsList = new QuestionsListBuilder(questions).getInstance();
+            res.status(200).json(QuestionsList);
+        } else {
+            res.status(200).json([]);
+        }
+    }).catch(err => next(err));
+});
+
+// get all deleted question
+router.get("/deleted-questions", (req, res, next) => {
+    Question.find({ IsActive: false }).then(questions => {
         if (questions && questions.length > 0) {
             const QuestionsList = new QuestionsListBuilder(questions).getInstance();
             res.status(200).json(QuestionsList);
