@@ -3,7 +3,7 @@ const router = express.Router();
 const Quiz = require("../models/quiz.model");
 const Question = require("../models/questions.model");
 const { QuizListBuilder } = require('../builder/quiz');
-const { ScoreCalculator } = require('../utils/quiz');
+const { scoreCalculator, fillAnswers } = require('../utils/quiz');
 
 // get all quiz entries
 router.get("/all-entries", (req, res, next) => {
@@ -14,8 +14,8 @@ router.get("/all-entries", (req, res, next) => {
 
 // insert quiz result
 router.post("/quiz-entry", (req, res, next) => {
-    Question.find({ TopicId: req.body.SelectedTopic, IsActive: true }).limit(15).then(questions => {
-        const Score = ScoreCalculator(questions, req.body.QuestionEntry);
+    Question.find({ TopicId: req.body.SelectedTopic, IsActive: true }).then(questions => {
+        const Score = scoreCalculator(questions, req.body.QuestionEntry);
         const quizData = {
             Name: req.body.Name,
             Email: req.body.Email,
@@ -24,7 +24,10 @@ router.post("/quiz-entry", (req, res, next) => {
             CreatedDate: new Date()
         };
         Quiz.collection.insert(quizData).then(data => {
-            res.status(200).json(Score);
+            res.status(200).json({
+                Score,
+                Result: fillAnswers(questions, req.body.QuestionEntry)
+            });
         }).catch(err => next(err));
     }).catch(err => next(err));
 });
