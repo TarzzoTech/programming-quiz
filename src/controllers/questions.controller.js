@@ -57,15 +57,31 @@ router.get("/quiz-questions/:topicId", (req, res, next) => {
 // inserting the question
 router.post("/", (req, res, next) => {
     Question.collection.insert(new QuestionBuilder(req.body).getInstance()).then(question => {
-        res.status(200).json(question);
-    }).catch(err => next(err));
+        res.status(200).json(true);
+    }).catch(err => {
+        res.status(200).json(false);
+        next(err);
+    });
+});
+
+// inserting the question
+router.post("/bulk-insert", (req, res, next) => {
+    Question.collection.insertMany(new QuestionsListBuilder(req.body).getInstance(true)).then(question => {
+        res.status(200).json(true);
+    }).catch(err => {
+        res.status(200).json(false);
+        next(err);
+    });
 });
 
 // update question
 router.put("/:questionId", (req, res, next) => {
     Question.findByIdAndUpdate(req.params.questionId, req.body).then(question => {
         res.status(200).json(true);
-    }).catch(err => next(err));
+    }).catch(err => {
+        res.status(200).json(false);
+        next(err);
+    });
 });
 
 // set to inactive on question delete
@@ -84,8 +100,14 @@ router.put("/undo/:questionId", (req, res, next) => {
         const newQuestion = { ...new QuestionBuilder(question).getInstance(false), IsActive: true };
         Question.findByIdAndUpdate(req.params.questionId, newQuestion).then(question => {
             res.status(200).json(true);
-        }).catch(err => next(err));
-    }).catch(err => next(err));
+        }).catch(err => {
+            res.status(200).json(false);
+            next(err);
+        });
+    }).catch(err => {
+        res.status(200).json(false);
+        next(err);
+    });
 });
 
 module.exports = router;

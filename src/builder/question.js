@@ -5,10 +5,10 @@ class QuestionsListBuilder {
         this.questionList = questionList;
     }
 
-    getInstance() {
+    getInstance(isNew = false) {
         return this.questionList.map(question => {
             return {
-                Id: question._id,
+                Id: isNew ? '' : question._id,
                 TopicId: question.TopicId,
                 Title: question.Title,
                 Answer: question.Answer,
@@ -20,9 +20,9 @@ class QuestionsListBuilder {
                     D: question.Options.D,
                 },
                 Score: question.Score,
-                SelectedAnswers: question.SelectedAnswers,
-                CreatedDate: question.CreatedDate,
-                IsActive: question.IsActive,
+                SelectedAnswers: isNew ? '' : question.SelectedAnswers,
+                CreatedDate: isNew ? new Date() : question.CreatedDate,
+                IsActive: isNew ? true : question.IsActive,
             }
         });
     }

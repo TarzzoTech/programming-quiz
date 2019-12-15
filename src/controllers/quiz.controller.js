@@ -2,8 +2,8 @@ const express = require("express");
 const router = express.Router();
 const Quiz = require("../models/quiz.model");
 const Question = require("../models/questions.model");
-const scoreCalculator = require("../service/quiz").ScoreCalculator;
 const { QuizListBuilder } = require('../builder/quiz');
+const { ScoreCalculator } = require('../utils/quiz');
 
 // get all quiz entries
 router.get("/all-entries", (req, res, next) => {
@@ -15,7 +15,7 @@ router.get("/all-entries", (req, res, next) => {
 // insert quiz result
 router.post("/quiz-entry", (req, res, next) => {
     Question.find({ TopicId: req.body.SelectedTopic, IsActive: true }).limit(15).then(questions => {
-        const Score = scoreCalculator(questions, req.body.QuestionEntry);
+        const Score = ScoreCalculator(questions, req.body.QuestionEntry);
         const quizData = {
             Name: req.body.Name,
             Email: req.body.Email,
