@@ -8,6 +8,9 @@ const Topic = new Schema({
     },
     Code: {
         type: String
+    },
+    CreatedDate: {
+        type: Date
     }
 });
 

@@ -16,6 +16,9 @@ const User = new Schema({
     PasswordHash: {
         type: String
     },
+    CreatedDate: {
+        type: Date
+    },
     SaltRound: {
         type: String
     }

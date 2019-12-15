@@ -18,6 +18,9 @@ const Setting = new Schema({
     IsRandom: {
         type: Boolean
     },
+    CreatedDate: {
+        type: Date
+    },
     ComplexityOptions: {
         type: [ComplexityOption]
     }

@@ -19,7 +19,7 @@ const QuestionOption = new Schema({
 });
 
 const Question = new Schema({
-    LanguageId: {
+    TopicId: {
         type: String
     },
     Title: {
@@ -36,6 +36,9 @@ const Question = new Schema({
         type: Number
     },
     SelectedAnswers: Mixed,
+    CreatedDate: {
+        type: Date
+    },
     IsActive: {
         type: Boolean
     }
